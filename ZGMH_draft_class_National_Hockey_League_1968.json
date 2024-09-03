@@ -1,0 +1,8405 @@
+﻿{
+  "version": 62,
+  "startingSeason": 1968,
+  "players": [
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 60,
+        "ovr": 43,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.91,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#a67358",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.29
+        },
+        "head": {
+          "id": "head10",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 0.88
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye18",
+          "angle": 11
+        },
+        "eyebrow": {
+          "id": "eyebrow10",
+          "angle": 17
+        },
+        "hair": {
+          "id": "shaggy2",
+          "color": "#1c1008",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth7",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose5",
+          "flip": false,
+          "size": 0.68
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "headband"
+        }
+      },
+      "firstName": "Rick",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/rick-smith-1980-32.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Smith",
+      "pid": 423,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 49,
+          "stre": 52,
+          "spd": 2,
+          "endu": 46,
+          "pss": 22,
+          "wst": 24,
+          "sst": 23,
+          "stk": 12,
+          "oiq": 8,
+          "chk": 47,
+          "blk": 69,
+          "fcf": 5,
+          "diq": 58,
+          "glk": 10,
+          "fuzz": 4.058870503104137,
+          "ovr": 43,
+          "pos": "D",
+          "pot": 60,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 27,
+            "W": 29,
+            "D": 43,
+            "G": 0
+          },
+          "pots": {
+            "C": 44,
+            "W": 48,
+            "D": 60,
+            "G": 28
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 200
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 62,
+        "ovr": 47,
+        "skills": [
+          "E"
+        ]
+      },
+      "face": {
+        "fatness": 0.42,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "longHair"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 0.98
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 0.66
+        },
+        "head": {
+          "id": "head13",
+          "shave": "rgba(0,0,0,0.14)"
+        },
+        "eyeLine": {
+          "id": "line6"
+        },
+        "smileLine": {
+          "id": "line3",
+          "size": 0.35
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "goatee-thin"
+        },
+        "eye": {
+          "id": "eye16",
+          "angle": -5
+        },
+        "eyebrow": {
+          "id": "eyebrow15",
+          "angle": -6
+        },
+        "hair": {
+          "id": "high",
+          "color": "#2C1608",
+          "flip": false
+        },
+        "mouth": {
+          "id": "angry",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose5",
+          "flip": false,
+          "size": 1.03
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Jim",
+      "hgt": 73,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/jim-dorey-1979-167.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Dorey",
+      "pid": 424,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 60,
+          "stre": 67,
+          "spd": 2,
+          "endu": 44,
+          "pss": 31,
+          "wst": 26,
+          "sst": 36,
+          "stk": 8,
+          "oiq": 11,
+          "chk": 64,
+          "blk": 61,
+          "fcf": 11,
+          "diq": 35,
+          "glk": 13,
+          "fuzz": -2.249359598204288,
+          "ovr": 47,
+          "pos": "D",
+          "pot": 62,
+          "season": 1968,
+          "skills": [
+            "E"
+          ],
+          "ovrs": {
+            "C": 31,
+            "W": 35,
+            "D": 47,
+            "G": 3
+          },
+          "pots": {
+            "C": 47,
+            "W": 51,
+            "D": 62,
+            "G": 24
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 190
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Manitoba, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 59,
+        "ovr": 44,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.71,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#ddb7a0",
+          "size": 0.96
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.93
+        },
+        "head": {
+          "id": "head6",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line2",
+          "size": 1.39
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "goatee6"
+        },
+        "eye": {
+          "id": "eye6",
+          "angle": -5
+        },
+        "eyebrow": {
+          "id": "eyebrow19",
+          "angle": -1
+        },
+        "hair": {
+          "id": "short2",
+          "color": "#D7BF91",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth4",
+          "flip": true
+        },
+        "nose": {
+          "id": "pinocchio",
+          "flip": true,
+          "size": 1.19
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Bill",
+      "hgt": 70,
+      "imgURL": "https://mbhockeyhalloffame.ca/wp-content/uploads/honoured/fairbairn_bill.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Fairbairn",
+      "pid": 425,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 53,
+          "stre": 36,
+          "spd": 27,
+          "endu": 61,
+          "pss": 33,
+          "wst": 43,
+          "sst": 56,
+          "stk": 51,
+          "oiq": 30,
+          "chk": 21,
+          "blk": 19,
+          "fcf": 21,
+          "diq": 19,
+          "glk": 13,
+          "fuzz": -2.35455086675933,
+          "ovr": 44,
+          "pos": "W",
+          "pot": 59,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 39,
+            "W": 44,
+            "D": 33,
+            "G": 3
+          },
+          "pots": {
+            "C": 53,
+            "W": 59,
+            "D": 47,
+            "G": 24
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 170
+    },
+    {
+      "born": {
+        "year": 1942,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 43,
+        "ovr": 39,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.44,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#f2d6cb",
+          "size": 1.02
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.34
+        },
+        "head": {
+          "id": "head10",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line5"
+        },
+        "smileLine": {
+          "id": "line2",
+          "size": 0.35
+        },
+        "miscLine": {
+          "id": "forehead1"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye19",
+          "angle": -7
+        },
+        "eyebrow": {
+          "id": "eyebrow8",
+          "angle": 15
+        },
+        "hair": {
+          "id": "shortBangs",
+          "color": "#B55239",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth5",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose14",
+          "flip": true,
+          "size": 1.08
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Norm",
+      "hgt": 70,
+      "imgURL": "https://www.bpmcdn.com/f/files/trail/import/2019-06/17274993_web1_190615-TDT-Dennis.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Dennis",
+      "pid": 426,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 52,
+          "stre": 28,
+          "spd": 52,
+          "endu": 53,
+          "pss": 39,
+          "wst": 35,
+          "sst": 36,
+          "stk": 33,
+          "oiq": 44,
+          "chk": 24,
+          "blk": 22,
+          "fcf": 38,
+          "diq": 34,
+          "glk": 3,
+          "fuzz": 3.9732584850905686,
+          "ovr": 39,
+          "pos": "W",
+          "pot": 43,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 44,
+            "W": 39,
+            "D": 31,
+            "G": 0
+          },
+          "pots": {
+            "C": 47,
+            "W": 43,
+            "D": 35,
+            "G": 4
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 175
+    },
+    {
+      "born": {
+        "year": 1938,
+        "loc": "Saskatchewan, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 46,
+        "ovr": 46,
+        "skills": [
+          "E"
+        ]
+      },
+      "face": {
+        "fatness": 0.47,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#f2d6cb",
+          "size": 0.96
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.46
+        },
+        "head": {
+          "id": "head15",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 1.44
+        },
+        "miscLine": {
+          "id": "chin2"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye18",
+          "angle": 5
+        },
+        "eyebrow": {
+          "id": "eyebrow20",
+          "angle": 20
+        },
+        "hair": {
+          "id": "messy-short",
+          "color": "#e9c67b",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose2",
+          "flip": false,
+          "size": 1.17
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Bill",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/bill-lecaine-1961-374.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "LeCaine",
+      "pid": 427,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 54,
+          "stre": 67,
+          "spd": 3,
+          "endu": 50,
+          "pss": 38,
+          "wst": 43,
+          "sst": 64,
+          "stk": 1,
+          "oiq": 40,
+          "chk": 68,
+          "blk": 12,
+          "fcf": 12,
+          "diq": 18,
+          "glk": 4,
+          "fuzz": -1.9023186305972302,
+          "ovr": 46,
+          "pos": "W",
+          "pot": 46,
+          "season": 1968,
+          "skills": [
+            "E"
+          ],
+          "ovrs": {
+            "C": 34,
+            "W": 46,
+            "D": 43,
+            "G": 0
+          },
+          "pots": {
+            "C": 34,
+            "W": 46,
+            "D": 43,
+            "G": 0
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 165
+    },
+    {
+      "born": {
+        "year": 1945,
+        "loc": "Massachusetts, USA"
+      },
+      "college": "Boston College",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 46,
+        "ovr": 33,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.1,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 1.01
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.45
+        },
+        "head": {
+          "id": "head7",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.64
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "soul"
+        },
+        "eye": {
+          "id": "eye18",
+          "angle": 8
+        },
+        "eyebrow": {
+          "id": "eyebrow12",
+          "angle": -6
+        },
+        "hair": {
+          "id": "tall-fade",
+          "color": "#2C1608",
+          "flip": false
+        },
+        "mouth": {
+          "id": "smile3",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose12",
+          "flip": false,
+          "size": 0.98
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Paul",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/paul-hurley-1975-169.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Hurley",
+      "pid": 428,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 43,
+          "stre": 40,
+          "spd": 2,
+          "endu": 53,
+          "pss": 38,
+          "wst": 18,
+          "sst": 33,
+          "stk": 6,
+          "oiq": 6,
+          "chk": 52,
+          "blk": 33,
+          "fcf": 3,
+          "diq": 38,
+          "glk": 10,
+          "fuzz": -1.661620884658439,
+          "ovr": 33,
+          "pos": "D",
+          "pot": 46,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 24,
+            "W": 27,
+            "D": 33,
+            "G": 0
+          },
+          "pots": {
+            "C": 34,
+            "W": 34,
+            "D": 46,
+            "G": 15
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Alberta, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 53,
+        "ovr": 42,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.98,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body4",
+          "color": "#ddb7a0",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.67
+        },
+        "head": {
+          "id": "head10",
+          "shave": "rgba(0,0,0,0.05)"
+        },
+        "eyeLine": {
+          "id": "line1"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.75
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "goatee3"
+        },
+        "eye": {
+          "id": "eye14",
+          "angle": 3
+        },
+        "eyebrow": {
+          "id": "eyebrow4",
+          "angle": 3
+        },
+        "hair": {
+          "id": "crop-fade2",
+          "color": "#2C1608",
+          "flip": true
+        },
+        "mouth": {
+          "id": "angry",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose1",
+          "flip": true,
+          "size": 0.83
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Ray",
+      "hgt": 76,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/ray-mckay-1972-33.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "McKay",
+      "pid": 429,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 84,
+          "stre": 55,
+          "spd": 1,
+          "endu": 58,
+          "pss": 13,
+          "wst": 36,
+          "sst": 38,
+          "stk": 11,
+          "oiq": 7,
+          "chk": 50,
+          "blk": 38,
+          "fcf": 1,
+          "diq": 42,
+          "glk": 8,
+          "fuzz": 7.667924801821894,
+          "ovr": 42,
+          "pos": "D",
+          "pot": 53,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 25,
+            "W": 36,
+            "D": 42,
+            "G": 0
+          },
+          "pots": {
+            "C": 38,
+            "W": 46,
+            "D": 53,
+            "G": 19
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 183
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 58,
+        "ovr": 42,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.36,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#f2d6cb",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.34
+        },
+        "head": {
+          "id": "head12",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.82
+        },
+        "miscLine": {
+          "id": "forehead4"
+        },
+        "facialHair": {
+          "id": "muttonSoul"
+        },
+        "eye": {
+          "id": "eye8",
+          "angle": -7
+        },
+        "eyebrow": {
+          "id": "eyebrow16",
+          "angle": 10
+        },
+        "hair": {
+          "id": "high",
+          "color": "#272421",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose8",
+          "flip": true,
+          "size": 0.85
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Serge",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/serge-bernier-1977-167.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Bernier",
+      "pid": 430,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 56,
+          "stre": 28,
+          "spd": 16,
+          "endu": 52,
+          "pss": 23,
+          "wst": 45,
+          "sst": 59,
+          "stk": 36,
+          "oiq": 33,
+          "chk": 31,
+          "blk": 11,
+          "fcf": 35,
+          "diq": 11,
+          "glk": 10,
+          "fuzz": -5.561162232883556,
+          "ovr": 42,
+          "pos": "W",
+          "pot": 58,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 35,
+            "W": 42,
+            "D": 29,
+            "G": 0
+          },
+          "pots": {
+            "C": 52,
+            "W": 58,
+            "D": 47,
+            "G": 24
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 190
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Saskatchewan, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 53,
+        "ovr": 38,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.4,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#f2d6cb",
+          "size": 1.04
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.38
+        },
+        "head": {
+          "id": "head18",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line3",
+          "size": 1.3
+        },
+        "miscLine": {
+          "id": "forehead2"
+        },
+        "facialHair": {
+          "id": "muttonGoatee1Stache"
+        },
+        "eye": {
+          "id": "eye4",
+          "angle": -4
+        },
+        "eyebrow": {
+          "id": "eyebrow14",
+          "angle": -13
+        },
+        "hair": {
+          "id": "messy-short",
+          "color": "#D7BF91",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth6",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose3",
+          "flip": true,
+          "size": 1.17
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Ace",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/garnet-bailey-1974-34.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Bailey",
+      "pid": 431,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 50,
+          "stre": 47,
+          "spd": 16,
+          "endu": 51,
+          "pss": 34,
+          "wst": 43,
+          "sst": 31,
+          "stk": 40,
+          "oiq": 40,
+          "chk": 49,
+          "blk": 7,
+          "fcf": 38,
+          "diq": 20,
+          "glk": 12,
+          "fuzz": 2.011279162063284,
+          "ovr": 38,
+          "pos": "W",
+          "pot": 57,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 39,
+            "W": 38,
+            "D": 32,
+            "G": 2
+          },
+          "pots": {
+            "C": 57,
+            "W": 53,
+            "D": 51,
+            "G": 26
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    },
+    {
+      "born": {
+        "year": 1943,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 58,
+        "ovr": 51,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.14,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#f2d6cb",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.39
+        },
+        "head": {
+          "id": "head2",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 0.73
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "muttonStacheSoul"
+        },
+        "eye": {
+          "id": "eye5",
+          "angle": 1
+        },
+        "eyebrow": {
+          "id": "eyebrow3",
+          "angle": -13
+        },
+        "hair": {
+          "id": "tall-fade",
+          "color": "#3D2314",
+          "flip": false
+        },
+        "mouth": {
+          "id": "smile2",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose10",
+          "flip": false,
+          "size": 0.71
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Bob",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/bob-berry-1968-7485.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Berry",
+      "pid": 432,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 50,
+          "stre": 47,
+          "spd": 20,
+          "endu": 63,
+          "pss": 37,
+          "wst": 51,
+          "sst": 56,
+          "stk": 34,
+          "oiq": 57,
+          "chk": 50,
+          "blk": 32,
+          "fcf": 7,
+          "diq": 8,
+          "glk": 1,
+          "fuzz": 0.33366151466811567,
+          "ovr": 51,
+          "pos": "W",
+          "pot": 58,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 41,
+            "W": 51,
+            "D": 41,
+            "G": 0
+          },
+          "pots": {
+            "C": 48,
+            "W": 58,
+            "D": 44,
+            "G": 6
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1945,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 51,
+        "ovr": 40,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.06,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#f2d6cb",
+          "size": 1.01
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.7
+        },
+        "head": {
+          "id": "head2",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 1.13
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye13",
+          "angle": 10
+        },
+        "eyebrow": {
+          "id": "eyebrow16",
+          "angle": 17
+        },
+        "hair": {
+          "id": "curlyFade1",
+          "color": "#B55239",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth5",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose10",
+          "flip": true,
+          "size": 0.58
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "headband"
+        }
+      },
+      "firstName": "Jean-Guy",
+      "hgt": 68,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/jean-guy-lagace-1974-50.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Lagacé",
+      "pid": 433,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 42,
+          "stre": 35,
+          "spd": 24,
+          "endu": 61,
+          "pss": 33,
+          "wst": 28,
+          "sst": 35,
+          "stk": 2,
+          "oiq": 4,
+          "chk": 58,
+          "blk": 56,
+          "fcf": 9,
+          "diq": 40,
+          "glk": 0,
+          "fuzz": 3.274481296395397,
+          "ovr": 40,
+          "pos": "D",
+          "pot": 51,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 29,
+            "W": 33,
+            "D": 40,
+            "G": 0
+          },
+          "pots": {
+            "C": 37,
+            "W": 43,
+            "D": 51,
+            "G": 15
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 172
+    },
+    {
+      "born": {
+        "year": 1943,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 78,
+        "ovr": 72,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.36,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#f2d6cb",
+          "size": 0.99
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1
+        },
+        "head": {
+          "id": "head9",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.47
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye15",
+          "angle": -3
+        },
+        "eyebrow": {
+          "id": "eyebrow2",
+          "angle": -2
+        },
+        "hair": {
+          "id": "dreads",
+          "color": "#2C1608",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth4",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose13",
+          "flip": true,
+          "size": 0.9
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Tony",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/tony-esposito-1977-35.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Esposito",
+      "pid": 434,
+      "ratings": [
+        {
+          "hgt": 54,
+          "stre": 12,
+          "spd": 8,
+          "endu": 32,
+          "pss": 0,
+          "wst": 4,
+          "sst": 11,
+          "stk": 8,
+          "oiq": 12,
+          "chk": 4,
+          "blk": 5,
+          "fcf": 7,
+          "diq": 11,
+          "glk": 82,
+          "fuzz": -1.0936473547714134,
+          "ovr": 72,
+          "pos": "G",
+          "pot": 78,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 8,
+            "W": 7,
+            "D": 4,
+            "G": 72
+          },
+          "pots": {
+            "C": 14,
+            "W": 12,
+            "D": 10,
+            "G": 78
+          }
+        }
+      ],
+      "relatives": [
+        {
+          "name": "Phil Esposito",
+          "pid": 112,
+          "type": "brother"
+        }
+      ],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1945,
+        "loc": "Ontario, Canada"
+      },
+      "college": "Toronto",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 51,
+        "ovr": 39,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.1,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "shaggy"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#f2d6cb",
+          "size": 0.99
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.59
+        },
+        "head": {
+          "id": "head16",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line3"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.53
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye1",
+          "angle": 9
+        },
+        "eyebrow": {
+          "id": "eyebrow13",
+          "angle": -6
+        },
+        "hair": {
+          "id": "tall-fade",
+          "color": "#2C1608",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth8",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose3",
+          "flip": true,
+          "size": 0.55
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Hank",
+      "hgt": 70,
+      "imgURL": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Hank_Monteith_action_shot.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Monteith",
+      "pid": 436,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 50,
+          "stre": 32,
+          "spd": 43,
+          "endu": 46,
+          "pss": 28,
+          "wst": 48,
+          "sst": 37,
+          "stk": 31,
+          "oiq": 53,
+          "chk": 14,
+          "blk": 3,
+          "fcf": 11,
+          "diq": 7,
+          "glk": 5,
+          "fuzz": 0.7949015523185178,
+          "ovr": 39,
+          "pos": "W",
+          "pot": 51,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 35,
+            "W": 39,
+            "D": 23,
+            "G": 0
+          },
+          "pots": {
+            "C": 44,
+            "W": 51,
+            "D": 36,
+            "G": 13
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 170
+    },
+    {
+      "born": {
+        "year": 1935,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 50,
+        "ovr": 50,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.97,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#ad6453",
+          "size": 1
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.36
+        },
+        "head": {
+          "id": "head18",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line3"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 0.32
+        },
+        "miscLine": {
+          "id": "forehead1"
+        },
+        "facialHair": {
+          "id": "honest-abe"
+        },
+        "eye": {
+          "id": "eye8",
+          "angle": 0
+        },
+        "eyebrow": {
+          "id": "eyebrow15",
+          "angle": -15
+        },
+        "hair": {
+          "id": "longHair",
+          "color": "#272421",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth4",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose9",
+          "flip": false,
+          "size": 0.83
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Marv",
+      "hgt": 68,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/marv-edwards-1968-253.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Edwards",
+      "pid": 438,
+      "ratings": [
+        {
+          "hgt": 60,
+          "stre": 2,
+          "spd": 3,
+          "endu": 43,
+          "pss": 9,
+          "wst": 8,
+          "sst": 8,
+          "stk": 1,
+          "oiq": 3,
+          "chk": 10,
+          "blk": 10,
+          "fcf": 10,
+          "diq": 10,
+          "glk": 60,
+          "fuzz": -2.6984525310890493,
+          "ovr": 50,
+          "pos": "G",
+          "pot": 50,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 7,
+            "W": 7,
+            "D": 4,
+            "G": 50
+          },
+          "pots": {
+            "C": 7,
+            "W": 7,
+            "D": 4,
+            "G": 50
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 155
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 53,
+        "ovr": 43,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.5,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body4",
+          "color": "#ddb7a0",
+          "size": 1.05
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.97
+        },
+        "head": {
+          "id": "head9",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line6"
+        },
+        "smileLine": {
+          "id": "line3",
+          "size": 1.03
+        },
+        "miscLine": {
+          "id": "chin2"
+        },
+        "facialHair": {
+          "id": "muttonGoatee1"
+        },
+        "eye": {
+          "id": "eye7",
+          "angle": -7
+        },
+        "eyebrow": {
+          "id": "eyebrow7",
+          "angle": 0
+        },
+        "hair": {
+          "id": "short-fade",
+          "color": "#CC9966",
+          "flip": true
+        },
+        "mouth": {
+          "id": "smile3",
+          "flip": true
+        },
+        "nose": {
+          "id": "pinocchio",
+          "flip": true,
+          "size": 0.51
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Dick",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/dick-sarrazin-1975-10.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Sarrazin",
+      "pid": 439,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 57,
+          "stre": 51,
+          "spd": 30,
+          "endu": 46,
+          "pss": 39,
+          "wst": 47,
+          "sst": 41,
+          "stk": 50,
+          "oiq": 58,
+          "chk": 5,
+          "blk": 18,
+          "fcf": 28,
+          "diq": 10,
+          "glk": 6,
+          "fuzz": 0.23870067112009943,
+          "ovr": 43,
+          "pos": "W",
+          "pot": 53,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 43,
+            "W": 43,
+            "D": 30,
+            "G": 0
+          },
+          "pots": {
+            "C": 56,
+            "W": 53,
+            "D": 44,
+            "G": 20
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1938,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 47,
+        "ovr": 47,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.09,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#f2d6cb",
+          "size": 0.96
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.13
+        },
+        "head": {
+          "id": "head18",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 1.43
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye4",
+          "angle": -6
+        },
+        "eyebrow": {
+          "id": "eyebrow17",
+          "angle": -11
+        },
+        "hair": {
+          "id": "curly",
+          "color": "#D7BF91",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth4",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose12",
+          "flip": false,
+          "size": 0.86
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Bob",
+      "hgt": 71,
+      "imgURL": "https://hockeygods.com/system/gallery_images/16805/normal.png",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Blackburn",
+      "pid": 440,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 53,
+          "stre": 58,
+          "spd": 4,
+          "endu": 40,
+          "pss": 34,
+          "wst": 28,
+          "sst": 27,
+          "stk": 3,
+          "oiq": 16,
+          "chk": 60,
+          "blk": 70,
+          "fcf": 3,
+          "diq": 51,
+          "glk": 18,
+          "fuzz": -5.31389574106287,
+          "ovr": 47,
+          "pos": "D",
+          "pot": 47,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 30,
+            "W": 34,
+            "D": 47,
+            "G": 8
+          },
+          "pots": {
+            "C": 30,
+            "W": 34,
+            "D": 47,
+            "G": 8
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Saskatchewan, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 55,
+        "ovr": 42,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.55,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#74453d",
+          "size": 0.98
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.17
+        },
+        "head": {
+          "id": "head10",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 1.87
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye16",
+          "angle": -3
+        },
+        "eyebrow": {
+          "id": "eyebrow10",
+          "angle": -8
+        },
+        "hair": {
+          "id": "crop-fade2",
+          "color": "#272421",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose13",
+          "flip": false,
+          "size": 0.69
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Bill",
+      "hgt": 68,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/bill-lesuk-1979-168.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Lesuk",
+      "pid": 441,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 40,
+          "stre": 38,
+          "spd": 43,
+          "endu": 62,
+          "pss": 36,
+          "wst": 44,
+          "sst": 40,
+          "stk": 15,
+          "oiq": 42,
+          "chk": 55,
+          "blk": 16,
+          "fcf": 15,
+          "diq": 24,
+          "glk": 3,
+          "fuzz": -1.207345413534671,
+          "ovr": 42,
+          "pos": "W",
+          "pot": 55,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 38,
+            "W": 42,
+            "D": 36,
+            "G": 0
+          },
+          "pots": {
+            "C": 50,
+            "W": 55,
+            "D": 47,
+            "G": 18
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Saskatchewan, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 59,
+        "ovr": 44,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.85,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#ddb7a0",
+          "size": 1
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.08
+        },
+        "head": {
+          "id": "head10",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line3",
+          "size": 1.92
+        },
+        "miscLine": {
+          "id": "forehead5"
+        },
+        "facialHair": {
+          "id": "fullgoatee2"
+        },
+        "eye": {
+          "id": "eye1",
+          "angle": 8
+        },
+        "eyebrow": {
+          "id": "eyebrow20",
+          "angle": 13
+        },
+        "hair": {
+          "id": "curly2",
+          "color": "#3D2314",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth2",
+          "flip": true
+        },
+        "nose": {
+          "id": "pinocchio",
+          "flip": true,
+          "size": 0.84
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Paul",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/paul-shmyr-1970-35.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Shmyr",
+      "pid": 442,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 53,
+          "stre": 52,
+          "spd": 11,
+          "endu": 64,
+          "pss": 18,
+          "wst": 26,
+          "sst": 41,
+          "stk": 1,
+          "oiq": 16,
+          "chk": 61,
+          "blk": 50,
+          "fcf": 6,
+          "diq": 43,
+          "glk": 14,
+          "fuzz": 2.1574234069610423,
+          "ovr": 44,
+          "pos": "D",
+          "pot": 59,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 28,
+            "W": 35,
+            "D": 44,
+            "G": 4
+          },
+          "pots": {
+            "C": 42,
+            "W": 47,
+            "D": 59,
+            "G": 24
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 175
+    },
+    {
+      "born": {
+        "year": 1950,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 65,
+        "ovr": 45,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.19,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#f2d6cb",
+          "size": 0.95
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.37
+        },
+        "head": {
+          "id": "head16",
+          "shave": "rgba(0,0,0,0.1)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 2.01
+        },
+        "miscLine": {
+          "id": "forehead4"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye1",
+          "angle": -8
+        },
+        "eyebrow": {
+          "id": "eyebrow1",
+          "angle": 8
+        },
+        "hair": {
+          "id": "short-fade",
+          "color": "#272421",
+          "flip": true
+        },
+        "mouth": {
+          "id": "smile",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose8",
+          "flip": true,
+          "size": 0.79
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Gerry",
+      "hgt": 74,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/gerry-meehan-1977-49.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Meehan",
+      "pid": 443,
+      "ratings": [
+        {
+          "hgt": 69,
+          "stre": 40,
+          "spd": 23,
+          "endu": 54,
+          "pss": 41,
+          "wst": 46,
+          "sst": 49,
+          "stk": 5,
+          "oiq": 45,
+          "chk": 28,
+          "blk": 36,
+          "fcf": 5,
+          "diq": 33,
+          "glk": 10,
+          "fuzz": -3.696431396616821,
+          "ovr": 45,
+          "pos": "W",
+          "pot": 65,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 35,
+            "W": 45,
+            "D": 39,
+            "G": 0
+          },
+          "pots": {
+            "C": 59,
+            "W": 65,
+            "D": 62,
+            "G": 34
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 200
+    },
+    {
+      "born": {
+        "year": 1949,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 59,
+        "ovr": 40,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.15,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#ddb7a0",
+          "size": 1.02
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.22
+        },
+        "head": {
+          "id": "head8",
+          "shave": "rgba(0,0,0,0.18)"
+        },
+        "eyeLine": {
+          "id": "line6"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.32
+        },
+        "miscLine": {
+          "id": "forehead2"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye17",
+          "angle": 12
+        },
+        "eyebrow": {
+          "id": "eyebrow5",
+          "angle": 8
+        },
+        "hair": {
+          "id": "crop-fade",
+          "color": "#CC9966",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth8",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose6",
+          "flip": true,
+          "size": 0.83
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Joey",
+      "hgt": 69,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/joey-johnston-1975-281.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Johnston",
+      "pid": 444,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 40,
+          "stre": 57,
+          "spd": 29,
+          "endu": 66,
+          "pss": 37,
+          "wst": 47,
+          "sst": 32,
+          "stk": 20,
+          "oiq": 26,
+          "chk": 60,
+          "blk": 28,
+          "fcf": 29,
+          "diq": 17,
+          "glk": 8,
+          "fuzz": -0.026887848130125572,
+          "ovr": 40,
+          "pos": "W",
+          "pot": 59,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 39,
+            "W": 40,
+            "D": 39,
+            "G": 0
+          },
+          "pots": {
+            "C": 57,
+            "W": 59,
+            "D": 62,
+            "G": 29
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 175
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Nova Scotia, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 44,
+        "ovr": 33,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.95,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "longHair"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#ddb7a0",
+          "size": 0.98
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.16
+        },
+        "head": {
+          "id": "head14",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line6"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.75
+        },
+        "miscLine": {
+          "id": "freckles2"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye2",
+          "angle": 6
+        },
+        "eyebrow": {
+          "id": "eyebrow4",
+          "angle": -9
+        },
+        "hair": {
+          "id": "messy",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "straight",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose8",
+          "flip": false,
+          "size": 1.06
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Sandy",
+      "hgt": 72,
+      "imgURL": "https://i.imgur.com/RJDTyhU.png",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Snow",
+      "pid": 445,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 59,
+          "stre": 22,
+          "spd": 1,
+          "endu": 53,
+          "pss": 10,
+          "wst": 41,
+          "sst": 44,
+          "stk": 0,
+          "oiq": 37,
+          "chk": 16,
+          "blk": 29,
+          "fcf": 6,
+          "diq": 5,
+          "glk": 7,
+          "fuzz": -1.338003007089675,
+          "ovr": 33,
+          "pos": "W",
+          "pot": 44,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 20,
+            "W": 33,
+            "D": 22,
+            "G": 0
+          },
+          "pots": {
+            "C": 32,
+            "W": 44,
+            "D": 35,
+            "G": 20
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 175
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 60,
+        "ovr": 43,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.55,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#aa816f",
+          "size": 1.01
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.04
+        },
+        "head": {
+          "id": "head6",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line6"
+        },
+        "smileLine": {
+          "id": "line2",
+          "size": 0.86
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "muttonSoul"
+        },
+        "eye": {
+          "id": "eye16",
+          "angle": 5
+        },
+        "eyebrow": {
+          "id": "eyebrow4",
+          "angle": 16
+        },
+        "hair": {
+          "id": "short",
+          "color": "#1c1008",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth5",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose13",
+          "flip": true,
+          "size": 1.01
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Christian",
+      "hgt": 68,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/chris-bordeleau-1968-225.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Bordeleau",
+      "pid": 446,
+      "pos": "C",
+      "ratings": [
+        {
+          "hgt": 38,
+          "stre": 20,
+          "spd": 63,
+          "endu": 50,
+          "pss": 52,
+          "wst": 30,
+          "sst": 31,
+          "stk": 23,
+          "oiq": 46,
+          "chk": 35,
+          "blk": 15,
+          "fcf": 37,
+          "diq": 13,
+          "glk": 5,
+          "fuzz": 0.6283075480752705,
+          "ovr": 43,
+          "pos": "C",
+          "pot": 60,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 43,
+            "W": 35,
+            "D": 25,
+            "G": 0
+          },
+          "pots": {
+            "C": 60,
+            "W": 51,
+            "D": 43,
+            "G": 23
+          }
+        }
+      ],
+      "relatives": [
+        {
+          "type": "brother",
+          "pid": 802,
+          "name": "J.P. Bordeleau"
+        },
+        {
+          "type": "brother",
+          "pid": 3678,
+          "name": "Paulin Bordeleau"
+        }
+      ],
+      "tid": -2,
+      "weight": 152
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Beirut, Lebanon"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 50,
+        "ovr": 36,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.79,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "shaggy"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#a67358",
+          "size": 1.01
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.18
+        },
+        "head": {
+          "id": "head3",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line1"
+        },
+        "smileLine": {
+          "id": "line3",
+          "size": 1.44
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye8",
+          "angle": 1
+        },
+        "eyebrow": {
+          "id": "eyebrow4",
+          "angle": 10
+        },
+        "hair": {
+          "id": "juice",
+          "color": "#272421",
+          "flip": false
+        },
+        "mouth": {
+          "id": "smile3",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose2",
+          "flip": false,
+          "size": 0.57
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Ed",
+      "hgt": 70,
+      "imgURL": "http://www.seattletotems.org/Hatoume.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Hatoum",
+      "pid": 447,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 50,
+          "stre": 29,
+          "spd": 55,
+          "endu": 50,
+          "pss": 17,
+          "wst": 50,
+          "sst": 38,
+          "stk": 10,
+          "oiq": 30,
+          "chk": 13,
+          "blk": 11,
+          "fcf": 18,
+          "diq": 12,
+          "glk": 9,
+          "fuzz": 2.396327561945937,
+          "ovr": 36,
+          "pos": "W",
+          "pot": 50,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 30,
+            "W": 36,
+            "D": 23,
+            "G": 0
+          },
+          "pots": {
+            "C": 43,
+            "W": 50,
+            "D": 39,
+            "G": 25
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 68,
+        "ovr": 49,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.25,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#ddb7a0",
+          "size": 1.02
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.94
+        },
+        "head": {
+          "id": "head4",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.35
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye17",
+          "angle": 6
+        },
+        "eyebrow": {
+          "id": "eyebrow16",
+          "angle": -3
+        },
+        "hair": {
+          "id": "crop-fade2",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth8",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose10",
+          "flip": false,
+          "size": 1.16
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Guy",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/guy-lapointe-1976-45.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Lapointe",
+      "pid": 448,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 58,
+          "stre": 61,
+          "spd": 7,
+          "endu": 56,
+          "pss": 23,
+          "wst": 49,
+          "sst": 58,
+          "stk": 5,
+          "oiq": 31,
+          "chk": 60,
+          "blk": 45,
+          "fcf": 10,
+          "diq": 35,
+          "glk": 10,
+          "fuzz": -3.6792658799633484,
+          "ovr": 49,
+          "pos": "D",
+          "pot": 68,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 34,
+            "W": 48,
+            "D": 49,
+            "G": 0
+          },
+          "pots": {
+            "C": 51,
+            "W": 67,
+            "D": 68,
+            "G": 29
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 56,
+        "ovr": 35,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.17,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#f2d6cb",
+          "size": 1.03
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.88
+        },
+        "head": {
+          "id": "head12",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line5"
+        },
+        "smileLine": {
+          "id": "line2",
+          "size": 1.6
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "harley2"
+        },
+        "eye": {
+          "id": "eye19",
+          "angle": 11
+        },
+        "eyebrow": {
+          "id": "eyebrow16",
+          "angle": -8
+        },
+        "hair": {
+          "id": "curly2",
+          "color": "#2C1608",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth6",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose1",
+          "flip": false,
+          "size": 0.98
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "François",
+      "hgt": 69,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/francois-lacombe-1977-167.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Lacombe",
+      "pid": 449,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 45,
+          "stre": 24,
+          "spd": 7,
+          "endu": 49,
+          "pss": 9,
+          "wst": 22,
+          "sst": 34,
+          "stk": 9,
+          "oiq": 5,
+          "chk": 53,
+          "blk": 49,
+          "fcf": 1,
+          "diq": 50,
+          "glk": 0,
+          "fuzz": -3.3600444660133277,
+          "ovr": 35,
+          "pos": "D",
+          "pot": 56,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 21,
+            "W": 27,
+            "D": 35,
+            "G": 0
+          },
+          "pots": {
+            "C": 38,
+            "W": 44,
+            "D": 56,
+            "G": 26
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1943,
+        "loc": "Quebec, Canada"
+      },
+      "college": "UBC",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 46,
+        "ovr": 39,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.63,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body4",
+          "color": "#f2d6cb",
+          "size": 1.04
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 0.77
+        },
+        "head": {
+          "id": "head13",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line6"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.63
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "goatee1"
+        },
+        "eye": {
+          "id": "eye17",
+          "angle": 12
+        },
+        "eyebrow": {
+          "id": "eyebrow4",
+          "angle": -3
+        },
+        "hair": {
+          "id": "tall-fade",
+          "color": "#2C1608",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth5",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose4",
+          "flip": false,
+          "size": 1.14
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Gary",
+      "hgt": 70,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/gary-dineen-1970-279.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Dineen",
+      "pid": 450,
+      "pos": "C",
+      "ratings": [
+        {
+          "hgt": 42,
+          "stre": 24,
+          "spd": 39,
+          "endu": 51,
+          "pss": 45,
+          "wst": 23,
+          "sst": 17,
+          "stk": 48,
+          "oiq": 31,
+          "chk": 2,
+          "blk": 37,
+          "fcf": 45,
+          "diq": 22,
+          "glk": 6,
+          "fuzz": -2.5966299006786664,
+          "ovr": 39,
+          "pos": "C",
+          "pot": 46,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 39,
+            "W": 28,
+            "D": 22,
+            "G": 0
+          },
+          "pots": {
+            "C": 46,
+            "W": 35,
+            "D": 27,
+            "G": 5
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 175
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Alberta, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 50,
+        "ovr": 35,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.33,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#ddb7a0",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 0.69
+        },
+        "head": {
+          "id": "head5",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 1.24
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "harley1-sb-1"
+        },
+        "eye": {
+          "id": "eye14",
+          "angle": 11
+        },
+        "eyebrow": {
+          "id": "eyebrow5",
+          "angle": 16
+        },
+        "hair": {
+          "id": "crop-fade",
+          "color": "#e9c67b",
+          "flip": true
+        },
+        "mouth": {
+          "id": "straight",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose5",
+          "flip": true,
+          "size": 1.14
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Doug",
+      "hgt": 69,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/doug-barrie-1973-329.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Barrie",
+      "pid": 451,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 48,
+          "stre": 29,
+          "spd": 26,
+          "endu": 55,
+          "pss": 10,
+          "wst": 34,
+          "sst": 39,
+          "stk": 14,
+          "oiq": 5,
+          "chk": 61,
+          "blk": 28,
+          "fcf": 9,
+          "diq": 35,
+          "glk": 11,
+          "fuzz": 2.513975176249412,
+          "ovr": 35,
+          "pos": "D",
+          "pot": 50,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 26,
+            "W": 33,
+            "D": 35,
+            "G": 1
+          },
+          "pots": {
+            "C": 41,
+            "W": 43,
+            "D": 50,
+            "G": 21
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 175
+    },
+    {
+      "born": {
+        "year": 1941,
+        "loc": "British Columbia, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 48,
+        "ovr": 46,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.85,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#a67358",
+          "size": 1.03
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 0.56
+        },
+        "head": {
+          "id": "head4",
+          "shave": "rgba(0,0,0,0.14)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 0.8
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "muttonGoatee1"
+        },
+        "eye": {
+          "id": "eye10",
+          "angle": 6
+        },
+        "eyebrow": {
+          "id": "eyebrow13",
+          "angle": -10
+        },
+        "hair": {
+          "id": "dreads",
+          "color": "#272421",
+          "flip": true
+        },
+        "mouth": {
+          "id": "smile3",
+          "flip": true
+        },
+        "nose": {
+          "id": "honker",
+          "flip": true,
+          "size": 1.01
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Larry",
+      "hgt": 73,
+      "imgURL": "https://cache.legacy.net/legacy/images/cobrands/okanaganvalley/photos/324294-01_none_20191011.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Hale",
+      "pid": 452,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 65,
+          "stre": 68,
+          "spd": 16,
+          "endu": 59,
+          "pss": 38,
+          "wst": 33,
+          "sst": 41,
+          "stk": 4,
+          "oiq": 19,
+          "chk": 49,
+          "blk": 56,
+          "fcf": 16,
+          "diq": 32,
+          "glk": 14,
+          "fuzz": -2.9591687862285956,
+          "ovr": 46,
+          "pos": "D",
+          "pot": 48,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 35,
+            "W": 40,
+            "D": 46,
+            "G": 4
+          },
+          "pots": {
+            "C": 36,
+            "W": 40,
+            "D": 48,
+            "G": 5
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 187
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Saskatchewan, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 54,
+        "ovr": 38,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.54,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#ddb7a0",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.96
+        },
+        "head": {
+          "id": "head3",
+          "shave": "rgba(0,0,0,0.13)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 2.07
+        },
+        "miscLine": {
+          "id": "forehead2"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye7",
+          "angle": 2
+        },
+        "eyebrow": {
+          "id": "eyebrow17",
+          "angle": -4
+        },
+        "hair": {
+          "id": "curly",
+          "color": "#272421",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth3",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose6",
+          "flip": true,
+          "size": 1.11
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Ron",
+      "hgt": 70,
+      "imgURL": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqAF1w7V26fu7VrW6tl998CWbPVjVr7puX4JAdHlFfTtJZiN2i4B8i38ZTNYwXYZLNGMW_M3l7UGQZTFJo_7tVEg3nPqqHkO__Ba7BjpfptiQxe5_rMg977z5oCWQ4edKq7S7DYRUGKniSWJNPrstlT0i4vA-bPzl3BIDSMrJuVtxFFBInnw/s800/snell.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Snell",
+      "pid": 453,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 49,
+          "stre": 20,
+          "spd": 53,
+          "endu": 51,
+          "pss": 21,
+          "wst": 43,
+          "sst": 44,
+          "stk": 43,
+          "oiq": 28,
+          "chk": 30,
+          "blk": 12,
+          "fcf": 21,
+          "diq": 9,
+          "glk": 9,
+          "fuzz": 0.9028075409895893,
+          "ovr": 38,
+          "pos": "W",
+          "pot": 54,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 36,
+            "W": 38,
+            "D": 26,
+            "G": 0
+          },
+          "pots": {
+            "C": 52,
+            "W": 54,
+            "D": 44,
+            "G": 25
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 158
+    },
+    {
+      "born": {
+        "year": 1944,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 56,
+        "ovr": 48,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.36,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#f2d6cb",
+          "size": 1.03
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.03
+        },
+        "head": {
+          "id": "head18",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line3",
+          "size": 0.52
+        },
+        "miscLine": {
+          "id": "forehead3"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye18",
+          "angle": -1
+        },
+        "eyebrow": {
+          "id": "eyebrow15",
+          "angle": -14
+        },
+        "hair": {
+          "id": "afro2",
+          "color": "#CC9966",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth5",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose6",
+          "flip": false,
+          "size": 0.99
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Gerry",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/gerry-desjardins-1977-33.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Desjardins",
+      "pid": 454,
+      "ratings": [
+        {
+          "hgt": 51,
+          "stre": 5,
+          "spd": 9,
+          "endu": 65,
+          "pss": 9,
+          "wst": 2,
+          "sst": 6,
+          "stk": 11,
+          "oiq": 6,
+          "chk": 10,
+          "blk": 11,
+          "fcf": 10,
+          "diq": 9,
+          "glk": 58,
+          "fuzz": 2.824173350601003,
+          "ovr": 48,
+          "pos": "G",
+          "pot": 56,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 10,
+            "W": 7,
+            "D": 5,
+            "G": 48
+          },
+          "pots": {
+            "C": 17,
+            "W": 15,
+            "D": 13,
+            "G": 56
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Saskatchewan, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 46,
+        "ovr": 33,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.47,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#ddb7a0",
+          "size": 0.99
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.53
+        },
+        "head": {
+          "id": "head2",
+          "shave": "rgba(0,0,0,0.04)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 0.62
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "loganGoatee3"
+        },
+        "eye": {
+          "id": "eye4",
+          "angle": 14
+        },
+        "eyebrow": {
+          "id": "eyebrow12",
+          "angle": 9
+        },
+        "hair": {
+          "id": "hair",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "angry",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose4",
+          "flip": false,
+          "size": 0.95
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Mike",
+      "hgt": 70,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/mike-chernoff-1975-176.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Chernoff",
+      "pid": 455,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 51,
+          "stre": 12,
+          "spd": 35,
+          "endu": 44,
+          "pss": 35,
+          "wst": 41,
+          "sst": 35,
+          "stk": 16,
+          "oiq": 36,
+          "chk": 14,
+          "blk": 19,
+          "fcf": 14,
+          "diq": 13,
+          "glk": 4,
+          "fuzz": 1.2532335860988817,
+          "ovr": 33,
+          "pos": "W",
+          "pot": 46,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 30,
+            "W": 33,
+            "D": 21,
+            "G": 0
+          },
+          "pots": {
+            "C": 41,
+            "W": 46,
+            "D": 33,
+            "G": 20
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 172
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 54,
+        "ovr": 37,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.05,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#f2d6cb",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.81
+        },
+        "head": {
+          "id": "head17",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 1
+        },
+        "miscLine": {
+          "id": "forehead3"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye17",
+          "angle": -10
+        },
+        "eyebrow": {
+          "id": "eyebrow13",
+          "angle": 18
+        },
+        "hair": {
+          "id": "spike2",
+          "color": "#272421",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth6",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose5",
+          "flip": false,
+          "size": 1.18
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "René",
+      "hgt": 71,
+      "imgURL": "https://i.imgur.com/C8ksW4o.png",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "LeClerc",
+      "pid": 456,
+      "pos": "C",
+      "ratings": [
+        {
+          "hgt": 53,
+          "stre": 21,
+          "spd": 32,
+          "endu": 41,
+          "pss": 36,
+          "wst": 42,
+          "sst": 22,
+          "stk": 24,
+          "oiq": 31,
+          "chk": 49,
+          "blk": 16,
+          "fcf": 48,
+          "diq": 12,
+          "glk": 10,
+          "fuzz": 0.35535646841735546,
+          "ovr": 37,
+          "pos": "C",
+          "pot": 54,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 37,
+            "W": 32,
+            "D": 25,
+            "G": 0
+          },
+          "pots": {
+            "C": 54,
+            "W": 44,
+            "D": 42,
+            "G": 24
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 165
+    },
+    {
+      "born": {
+        "year": 1945,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 62,
+        "ovr": 51,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.84,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 1.04
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.07
+        },
+        "head": {
+          "id": "head9",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line5"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 0.91
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye18",
+          "angle": -2
+        },
+        "eyebrow": {
+          "id": "eyebrow17",
+          "angle": 2
+        },
+        "hair": {
+          "id": "short-fade",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth8",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose5",
+          "flip": false,
+          "size": 0.71
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Jean",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/jean-pronovost-1970-50.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Pronovost",
+      "pid": 457,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 52,
+          "stre": 39,
+          "spd": 31,
+          "endu": 65,
+          "pss": 37,
+          "wst": 62,
+          "sst": 52,
+          "stk": 36,
+          "oiq": 46,
+          "chk": 25,
+          "blk": 24,
+          "fcf": 31,
+          "diq": 39,
+          "glk": 11,
+          "fuzz": -3.9814798647070435,
+          "ovr": 51,
+          "pos": "W",
+          "pot": 62,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 45,
+            "W": 51,
+            "D": 40,
+            "G": 1
+          },
+          "pots": {
+            "C": 54,
+            "W": 62,
+            "D": 51,
+            "G": 18
+          }
+        }
+      ],
+      "relatives": [
+        {
+          "type": "brother",
+          "pid": 222,
+          "name": "Marcel Pronovost"
+        }
+      ],
+      "tid": -2,
+      "weight": 165
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 61,
+        "ovr": 40,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.86,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#ddb7a0",
+          "size": 1.03
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.72
+        },
+        "head": {
+          "id": "head8",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 1.54
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye14",
+          "angle": 12
+        },
+        "eyebrow": {
+          "id": "eyebrow11",
+          "angle": 4
+        },
+        "hair": {
+          "id": "fauxhawk-fade",
+          "color": "#3D2314",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth8",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose10",
+          "flip": true,
+          "size": 0.77
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Gary",
+      "hgt": 69,
+      "imgURL": "https://hockeygods.com/system/gallery_images/20773/normal.png",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Edwards",
+      "pid": 458,
+      "ratings": [
+        {
+          "hgt": 40,
+          "stre": 8,
+          "spd": 6,
+          "endu": 50,
+          "pss": 5,
+          "wst": 3,
+          "sst": 1,
+          "stk": 5,
+          "oiq": 3,
+          "chk": 10,
+          "blk": 12,
+          "fcf": 11,
+          "diq": 1,
+          "glk": 50,
+          "fuzz": 3.7244321339933477,
+          "ovr": 40,
+          "pos": "G",
+          "pot": 61,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 7,
+            "W": 3,
+            "D": 2,
+            "G": 40
+          },
+          "pots": {
+            "C": 25,
+            "W": 18,
+            "D": 22,
+            "G": 61
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 160
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 59,
+        "ovr": 46,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.77,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 0.96
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.2
+        },
+        "head": {
+          "id": "head10",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line1"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 2.01
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye14",
+          "angle": 3
+        },
+        "eyebrow": {
+          "id": "eyebrow6",
+          "angle": 8
+        },
+        "hair": {
+          "id": "afro2",
+          "color": "#B55239",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth6",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose7",
+          "flip": true,
+          "size": 0.96
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Gary",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/gary-croteau-1971-283.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Croteau",
+      "pid": 459,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 55,
+          "stre": 37,
+          "spd": 20,
+          "endu": 81,
+          "pss": 38,
+          "wst": 52,
+          "sst": 38,
+          "stk": 43,
+          "oiq": 72,
+          "chk": 12,
+          "blk": 12,
+          "fcf": 4,
+          "diq": 9,
+          "glk": 11,
+          "fuzz": 2.575969730974742,
+          "ovr": 46,
+          "pos": "W",
+          "pot": 59,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 39,
+            "W": 46,
+            "D": 28,
+            "G": 1
+          },
+          "pots": {
+            "C": 51,
+            "W": 59,
+            "D": 42,
+            "G": 21
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 205
+    },
+    {
+      "born": {
+        "year": 1942,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 38,
+        "ovr": 36,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.22,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#ddb7a0",
+          "size": 0.95
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.17
+        },
+        "head": {
+          "id": "head3",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line6"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.45
+        },
+        "miscLine": {
+          "id": "chin2"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye14",
+          "angle": 4
+        },
+        "eyebrow": {
+          "id": "eyebrow14",
+          "angle": 15
+        },
+        "hair": {
+          "id": "hair",
+          "color": "#272421",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth4",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose10",
+          "flip": false,
+          "size": 0.56
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Earl",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/earl-heiskala-1973-328.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Heiskala",
+      "pid": 460,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 60,
+          "stre": 55,
+          "spd": 4,
+          "endu": 59,
+          "pss": 7,
+          "wst": 47,
+          "sst": 31,
+          "stk": 10,
+          "oiq": 22,
+          "chk": 59,
+          "blk": 41,
+          "fcf": 6,
+          "diq": 12,
+          "glk": 11,
+          "fuzz": 3.264574466303697,
+          "ovr": 36,
+          "pos": "W",
+          "pot": 38,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 26,
+            "W": 36,
+            "D": 37,
+            "G": 1
+          },
+          "pots": {
+            "C": 28,
+            "W": 38,
+            "D": 39,
+            "G": 7
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Manitoba, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 66,
+        "ovr": 49,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.14,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#ddb7a0",
+          "size": 1.04
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.83
+        },
+        "head": {
+          "id": "head1",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line2"
+        },
+        "smileLine": {
+          "id": "line2",
+          "size": 0.7
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "mustache-thin"
+        },
+        "eye": {
+          "id": "eye8",
+          "angle": 3
+        },
+        "eyebrow": {
+          "id": "eyebrow2",
+          "angle": 4
+        },
+        "hair": {
+          "id": "messy",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "straight",
+          "flip": false
+        },
+        "nose": {
+          "id": "honker",
+          "flip": false,
+          "size": 1.1
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Gerry",
+      "hgt": 69,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/gerry-hart-1983-36.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Hart",
+      "pid": 461,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 49,
+          "stre": 66,
+          "spd": 5,
+          "endu": 75,
+          "pss": 15,
+          "wst": 18,
+          "sst": 46,
+          "stk": 11,
+          "oiq": 12,
+          "chk": 63,
+          "blk": 50,
+          "fcf": 12,
+          "diq": 52,
+          "glk": 3,
+          "fuzz": -1.2268975322257538,
+          "ovr": 49,
+          "pos": "D",
+          "pot": 66,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 31,
+            "W": 36,
+            "D": 49,
+            "G": 0
+          },
+          "pots": {
+            "C": 48,
+            "W": 51,
+            "D": 66,
+            "G": 26
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 175
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Alberta, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 57,
+        "ovr": 41,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.54,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 1.01
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 0.69
+        },
+        "head": {
+          "id": "head5",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line1"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 0.32
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "wilt-sideburns-long"
+        },
+        "eye": {
+          "id": "eye9",
+          "angle": 2
+        },
+        "eyebrow": {
+          "id": "eyebrow16",
+          "angle": -7
+        },
+        "hair": {
+          "id": "blowoutFade",
+          "color": "#e9c67b",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth5",
+          "flip": true
+        },
+        "nose": {
+          "id": "pinocchio",
+          "flip": true,
+          "size": 0.83
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Jim",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/jim-harrison-1973-329.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Harrison",
+      "pid": 462,
+      "pos": "C",
+      "ratings": [
+        {
+          "hgt": 53,
+          "stre": 45,
+          "spd": 30,
+          "endu": 46,
+          "pss": 36,
+          "wst": 36,
+          "sst": 42,
+          "stk": 36,
+          "oiq": 23,
+          "chk": 54,
+          "blk": 18,
+          "fcf": 45,
+          "diq": 20,
+          "glk": 7,
+          "fuzz": -0.7470803638064526,
+          "ovr": 41,
+          "pos": "C",
+          "pot": 57,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 41,
+            "W": 38,
+            "D": 36,
+            "G": 0
+          },
+          "pots": {
+            "C": 57,
+            "W": 51,
+            "D": 54,
+            "G": 21
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 62,
+        "ovr": 46,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.67,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#ddb7a0",
+          "size": 1
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.57
+        },
+        "head": {
+          "id": "head11",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.79
+        },
+        "miscLine": {
+          "id": "forehead4"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye17",
+          "angle": 7
+        },
+        "eyebrow": {
+          "id": "eyebrow3",
+          "angle": -8
+        },
+        "hair": {
+          "id": "curlyFade2",
+          "color": "#2C1608",
+          "flip": false
+        },
+        "mouth": {
+          "id": "smile4",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose9",
+          "flip": false,
+          "size": 0.92
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Jim ",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/jim-lorentz-1977-33.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Lorentz",
+      "pid": 463,
+      "ratings": [
+        {
+          "hgt": 62,
+          "stre": 45,
+          "spd": 6,
+          "endu": 48,
+          "pss": 42,
+          "wst": 56,
+          "sst": 51,
+          "stk": 5,
+          "oiq": 40,
+          "chk": 34,
+          "blk": 33,
+          "fcf": 10,
+          "diq": 34,
+          "glk": 6,
+          "fuzz": -2.2455285143184183,
+          "ovr": 46,
+          "pos": "W",
+          "pot": 62,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 34,
+            "W": 46,
+            "D": 40,
+            "G": 0
+          },
+          "pots": {
+            "C": 47,
+            "W": 62,
+            "D": 56,
+            "G": 23
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 60,
+        "ovr": 43,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.85,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#ddb7a0",
+          "size": 1.04
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.71
+        },
+        "head": {
+          "id": "head16",
+          "shave": "rgba(0,0,0,0.14)"
+        },
+        "eyeLine": {
+          "id": "line2"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 2.04
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "neckbeard"
+        },
+        "eye": {
+          "id": "eye7",
+          "angle": 8
+        },
+        "eyebrow": {
+          "id": "eyebrow17",
+          "angle": 19
+        },
+        "hair": {
+          "id": "messy",
+          "color": "#D7BF91",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth5",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose4",
+          "flip": false,
+          "size": 0.91
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "headband"
+        }
+      },
+      "firstName": "Rick",
+      "hgt": 69,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/rick-ley-1980-46.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Ley",
+      "pid": 464,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 45,
+          "stre": 42,
+          "spd": 12,
+          "endu": 59,
+          "pss": 27,
+          "wst": 24,
+          "sst": 35,
+          "stk": 6,
+          "oiq": 18,
+          "chk": 63,
+          "blk": 58,
+          "fcf": 5,
+          "diq": 42,
+          "glk": 5,
+          "fuzz": -2.0064899649464483,
+          "ovr": 43,
+          "pos": "D",
+          "pot": 60,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 29,
+            "W": 34,
+            "D": 43,
+            "G": 0
+          },
+          "pots": {
+            "C": 47,
+            "W": 52,
+            "D": 60,
+            "G": 27
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 190
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 56,
+        "ovr": 40,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.78,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 1.02
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.23
+        },
+        "head": {
+          "id": "head11",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 1.66
+        },
+        "miscLine": {
+          "id": "forehead2"
+        },
+        "facialHair": {
+          "id": "harley2-sb-1"
+        },
+        "eye": {
+          "id": "eye2",
+          "angle": 14
+        },
+        "eyebrow": {
+          "id": "eyebrow14",
+          "angle": 7
+        },
+        "hair": {
+          "id": "faux-hawk",
+          "color": "#5A3825",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth8",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose8",
+          "flip": true,
+          "size": 0.73
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Steve",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/steve-atkinson-1970-96.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Atkinson",
+      "pid": 465,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 50,
+          "stre": 19,
+          "spd": 55,
+          "endu": 58,
+          "pss": 32,
+          "wst": 40,
+          "sst": 36,
+          "stk": 38,
+          "oiq": 38,
+          "chk": 36,
+          "blk": 35,
+          "fcf": 42,
+          "diq": 15,
+          "glk": 10,
+          "fuzz": 5.92912769682163,
+          "ovr": 40,
+          "pos": "W",
+          "pot": 56,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 44,
+            "W": 40,
+            "D": 31,
+            "G": 0
+          },
+          "pots": {
+            "C": 60,
+            "W": 56,
+            "D": 51,
+            "G": 29
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 170
+    },
+    {
+      "born": {
+        "year": 1945,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 43,
+        "ovr": 34,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.57,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 1.03
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.14
+        },
+        "head": {
+          "id": "head11",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 0.49
+        },
+        "miscLine": {
+          "id": "chin1"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye16",
+          "angle": 10
+        },
+        "eyebrow": {
+          "id": "eyebrow10",
+          "angle": 11
+        },
+        "hair": {
+          "id": "messy-short",
+          "color": "#272421",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth5",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose3",
+          "flip": false,
+          "size": 0.83
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Bob",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/bob-jones-1973-328.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Jones",
+      "pid": 466,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 64,
+          "stre": 37,
+          "spd": 56,
+          "endu": 44,
+          "pss": 45,
+          "wst": 29,
+          "sst": 26,
+          "stk": 22,
+          "oiq": 10,
+          "chk": 41,
+          "blk": 36,
+          "fcf": 34,
+          "diq": 43,
+          "glk": 13,
+          "fuzz": 3.46388681686666,
+          "ovr": 34,
+          "pos": "W",
+          "pot": 44,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 40,
+            "W": 34,
+            "D": 37,
+            "G": 3
+          },
+          "pots": {
+            "C": 49,
+            "W": 43,
+            "D": 48,
+            "G": 20
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 53,
+        "ovr": 42,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.19,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#f2d6cb",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.17
+        },
+        "head": {
+          "id": "head17",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line5"
+        },
+        "smileLine": {
+          "id": "line2",
+          "size": 1.39
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "neckbeardSB1"
+        },
+        "eye": {
+          "id": "eye12",
+          "angle": -3
+        },
+        "eyebrow": {
+          "id": "eyebrow19",
+          "angle": 16
+        },
+        "hair": {
+          "id": "longHair",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth2",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose13",
+          "flip": false,
+          "size": 0.91
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Jean-Paul",
+      "hgt": 70,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/jean-paul-leblanc-1972-35.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "LeBlanc",
+      "pid": 467,
+      "pos": "C",
+      "ratings": [
+        {
+          "hgt": 54,
+          "stre": 22,
+          "spd": 30,
+          "endu": 68,
+          "pss": 38,
+          "wst": 35,
+          "sst": 14,
+          "stk": 27,
+          "oiq": 51,
+          "chk": 47,
+          "blk": 35,
+          "fcf": 39,
+          "diq": 37,
+          "glk": 10,
+          "fuzz": 0.29770672462197456,
+          "ovr": 42,
+          "pos": "C",
+          "pot": 53,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 42,
+            "W": 36,
+            "D": 33,
+            "G": 0
+          },
+          "pots": {
+            "C": 53,
+            "W": 49,
+            "D": 47,
+            "G": 21
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 170
+    },
+    {
+      "born": {
+        "year": 1943,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 57,
+        "ovr": 50,
+        "skills": [
+          "E"
+        ]
+      },
+      "face": {
+        "fatness": 0.47,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#f2d6cb",
+          "size": 1.03
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.79
+        },
+        "head": {
+          "id": "head9",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line1"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 1.92
+        },
+        "miscLine": {
+          "id": "freckles1"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye2",
+          "angle": 2
+        },
+        "eyebrow": {
+          "id": "eyebrow11",
+          "angle": 2
+        },
+        "hair": {
+          "id": "messy",
+          "color": "#2C1608",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth6",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose5",
+          "flip": true,
+          "size": 1.12
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Pat",
+      "hgt": 75,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/pat-quinn-1975-235.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Quinn",
+      "pid": 468,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 70,
+          "stre": 63,
+          "spd": 3,
+          "endu": 64,
+          "pss": 35,
+          "wst": 38,
+          "sst": 41,
+          "stk": 3,
+          "oiq": 14,
+          "chk": 67,
+          "blk": 50,
+          "fcf": 9,
+          "diq": 44,
+          "glk": 9,
+          "fuzz": -1.0193121547349635,
+          "ovr": 50,
+          "pos": "D",
+          "pot": 57,
+          "season": 1968,
+          "skills": [
+            "E"
+          ],
+          "ovrs": {
+            "C": 33,
+            "W": 41,
+            "D": 50,
+            "G": 0
+          },
+          "pots": {
+            "C": 39,
+            "W": 44,
+            "D": 57,
+            "G": 7
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 215
+    },
+    {
+      "born": {
+        "year": 1945,
+        "loc": "Nova Scotia, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 57,
+        "ovr": 45,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.82,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#f2d6cb",
+          "size": 1.01
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.08
+        },
+        "head": {
+          "id": "head8",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.67
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "goatee9"
+        },
+        "eye": {
+          "id": "eye10",
+          "angle": 11
+        },
+        "eyebrow": {
+          "id": "eyebrow4",
+          "angle": 7
+        },
+        "hair": {
+          "id": "afro2",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "smile-closed",
+          "flip": false
+        },
+        "nose": {
+          "id": "pinocchio",
+          "flip": false,
+          "size": 0.54
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Norm",
+      "hgt": 68,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/norm-ferguson-1976-247.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Ferguson",
+      "pid": 469,
+      "pos": "C",
+      "ratings": [
+        {
+          "hgt": 37,
+          "stre": 18,
+          "spd": 58,
+          "endu": 50,
+          "pss": 43,
+          "wst": 47,
+          "sst": 47,
+          "stk": 32,
+          "oiq": 37,
+          "chk": 27,
+          "blk": 40,
+          "fcf": 46,
+          "diq": 13,
+          "glk": 6,
+          "fuzz": -1.8936486617916126,
+          "ovr": 45,
+          "pos": "C",
+          "pot": 57,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 45,
+            "W": 43,
+            "D": 32,
+            "G": 0
+          },
+          "pots": {
+            "C": 57,
+            "W": 55,
+            "D": 42,
+            "G": 15
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 160
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 75,
+        "ovr": 59,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.72,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 1.04
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.31
+        },
+        "head": {
+          "id": "head5",
+          "shave": "rgba(0,0,0,0.14)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line2",
+          "size": 1.96
+        },
+        "miscLine": {
+          "id": "forehead1"
+        },
+        "facialHair": {
+          "id": "harley1-sb-2"
+        },
+        "eye": {
+          "id": "eye4",
+          "angle": -9
+        },
+        "eyebrow": {
+          "id": "eyebrow9",
+          "angle": 4
+        },
+        "hair": {
+          "id": "juice",
+          "color": "#3D2314",
+          "flip": false
+        },
+        "mouth": {
+          "id": "straight",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose6",
+          "flip": false,
+          "size": 0.85
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Brad",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/brad-park-1974-48.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Park",
+      "pid": 470,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 62,
+          "stre": 63,
+          "spd": 4,
+          "endu": 71,
+          "pss": 41,
+          "wst": 39,
+          "sst": 53,
+          "stk": 2,
+          "oiq": 32,
+          "chk": 62,
+          "blk": 60,
+          "fcf": 3,
+          "diq": 77,
+          "glk": 7,
+          "fuzz": -2.9339016814949295,
+          "ovr": 59,
+          "pos": "D",
+          "pot": 75,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 39,
+            "W": 50,
+            "D": 59,
+            "G": 0
+          },
+          "pots": {
+            "C": 54,
+            "W": 65,
+            "D": 75,
+            "G": 26
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 190
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 65,
+        "ovr": 48,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.62,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#ddb7a0",
+          "size": 0.98
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.68
+        },
+        "head": {
+          "id": "head5",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.5
+        },
+        "miscLine": {
+          "id": "forehead4"
+        },
+        "facialHair": {
+          "id": "goatee12"
+        },
+        "eye": {
+          "id": "eye2",
+          "angle": 9
+        },
+        "eyebrow": {
+          "id": "eyebrow6",
+          "angle": -10
+        },
+        "hair": {
+          "id": "tall-fade",
+          "color": "#CC9966",
+          "flip": true
+        },
+        "mouth": {
+          "id": "side",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose8",
+          "flip": true,
+          "size": 0.91
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Jude",
+      "hgt": 70,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/jude-drouin-1968-225.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Drouin",
+      "pid": 471,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 54,
+          "stre": 31,
+          "spd": 33,
+          "endu": 56,
+          "pss": 24,
+          "wst": 64,
+          "sst": 52,
+          "stk": 25,
+          "oiq": 52,
+          "chk": 31,
+          "blk": 8,
+          "fcf": 27,
+          "diq": 12,
+          "glk": 2,
+          "fuzz": -1.734701704668457,
+          "ovr": 48,
+          "pos": "W",
+          "pot": 65,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 39,
+            "W": 48,
+            "D": 31,
+            "G": 0
+          },
+          "pots": {
+            "C": 54,
+            "W": 65,
+            "D": 52,
+            "G": 28
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 160
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 50,
+        "ovr": 32,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.8,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body4",
+          "color": "#f2d6cb",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 1.2
+        },
+        "head": {
+          "id": "head10",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.76
+        },
+        "miscLine": {
+          "id": "freckles1"
+        },
+        "facialHair": {
+          "id": "mustache-thin"
+        },
+        "eye": {
+          "id": "eye19",
+          "angle": 2
+        },
+        "eyebrow": {
+          "id": "eyebrow6",
+          "angle": 5
+        },
+        "hair": {
+          "id": "short-fade",
+          "color": "#e9c67b",
+          "flip": false
+        },
+        "mouth": {
+          "id": "straight",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose13",
+          "flip": false,
+          "size": 0.83
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Robbie",
+      "hgt": 68,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/robbie-irons-1968-22.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Irons",
+      "pid": 472,
+      "ratings": [
+        {
+          "hgt": 44,
+          "stre": 9,
+          "spd": 4,
+          "endu": 35,
+          "pss": 7,
+          "wst": 3,
+          "sst": 7,
+          "stk": 10,
+          "oiq": 8,
+          "chk": 7,
+          "blk": 8,
+          "fcf": 9,
+          "diq": 7,
+          "glk": 42,
+          "fuzz": -1.8398291076905653,
+          "ovr": 32,
+          "pos": "G",
+          "pot": 50,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 8,
+            "W": 5,
+            "D": 3,
+            "G": 32
+          },
+          "pots": {
+            "C": 20,
+            "W": 15,
+            "D": 17,
+            "G": 50
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 150
+    },
+    {
+      "born": {
+        "year": 1941,
+        "loc": "Ontario, Canada"
+      },
+      "college": "UBC",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 41,
+        "ovr": 41,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.88,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#ddb7a0",
+          "size": 0.96
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.97
+        },
+        "head": {
+          "id": "head16",
+          "shave": "rgba(0,0,0,0.12)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 1.18
+        },
+        "miscLine": {
+          "id": "freckles1"
+        },
+        "facialHair": {
+          "id": "neckbeard2"
+        },
+        "eye": {
+          "id": "eye10",
+          "angle": 12
+        },
+        "eyebrow": {
+          "id": "eyebrow6",
+          "angle": 8
+        },
+        "hair": {
+          "id": "bald",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "side",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose12",
+          "flip": false,
+          "size": 1.11
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Barry",
+      "hgt": 72,
+      "imgURL": "https://upload.wikimedia.org/wikipedia/commons/5/57/Barry_MacKenzie.png",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "MacKenzie",
+      "pid": 473,
+      "pos": "D",
+      "ratings": [
+        {
+          "hgt": 57,
+          "stre": 40,
+          "spd": 4,
+          "endu": 33,
+          "pss": 12,
+          "wst": 23,
+          "sst": 24,
+          "stk": 4,
+          "oiq": 10,
+          "chk": 35,
+          "blk": 44,
+          "fcf": 12,
+          "diq": 100,
+          "glk": 0,
+          "fuzz": -6.537904006061685,
+          "ovr": 41,
+          "pos": "D",
+          "pot": 43,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 25,
+            "W": 28,
+            "D": 41,
+            "G": 0
+          },
+          "pots": {
+            "C": 25,
+            "W": 29,
+            "D": 41,
+            "G": 2
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 190
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Saskatchewan, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 51,
+        "ovr": 36,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.87,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#f2d6cb",
+          "size": 1
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.12
+        },
+        "head": {
+          "id": "head6",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line1",
+          "size": 1.69
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "muttonGoatee1Stache"
+        },
+        "eye": {
+          "id": "eye3",
+          "angle": -4
+        },
+        "eyebrow": {
+          "id": "eyebrow2",
+          "angle": -4
+        },
+        "hair": {
+          "id": "curly",
+          "color": "#5A3825",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth3",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose5",
+          "flip": false,
+          "size": 1.14
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Grant",
+      "hgt": 69,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/grant-erickson-1974-244.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Erickson",
+      "pid": 474,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 44,
+          "stre": 24,
+          "spd": 26,
+          "endu": 49,
+          "pss": 48,
+          "wst": 32,
+          "sst": 39,
+          "stk": 7,
+          "oiq": 43,
+          "chk": 38,
+          "blk": 27,
+          "fcf": 5,
+          "diq": 31,
+          "glk": 9,
+          "fuzz": -4.173338882661592,
+          "ovr": 36,
+          "pos": "W",
+          "pot": 51,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 33,
+            "W": 36,
+            "D": 31,
+            "G": 0
+          },
+          "pots": {
+            "C": 50,
+            "W": 51,
+            "D": 48,
+            "G": 25
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 165
+    },
+    {
+      "born": {
+        "year": 1944,
+        "loc": "Hampshire, England"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 48,
+        "ovr": 41,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.02,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 0.96
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.41
+        },
+        "head": {
+          "id": "head16",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 1.77
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye13",
+          "angle": -9
+        },
+        "eyebrow": {
+          "id": "eyebrow20",
+          "angle": -10
+        },
+        "hair": {
+          "id": "crop-fade",
+          "color": "#B55239",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth8",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose3",
+          "flip": false,
+          "size": 1.01
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Brian",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/brian-perry-1969-272.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Perry",
+      "pid": 475,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 51,
+          "stre": 18,
+          "spd": 28,
+          "endu": 66,
+          "pss": 23,
+          "wst": 57,
+          "sst": 49,
+          "stk": 23,
+          "oiq": 34,
+          "chk": 16,
+          "blk": 11,
+          "fcf": 36,
+          "diq": 16,
+          "glk": 7,
+          "fuzz": 3.4929617725492275,
+          "ovr": 41,
+          "pos": "W",
+          "pot": 48,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 34,
+            "W": 41,
+            "D": 25,
+            "G": 0
+          },
+          "pots": {
+            "C": 40,
+            "W": 48,
+            "D": 32,
+            "G": 10
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 176
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 49,
+        "ovr": 31,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.11,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#ddb7a0",
+          "size": 1.02
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear1",
+          "size": 0.95
+        },
+        "head": {
+          "id": "head2",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line6"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 1.59
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "loganGoatee2Stache"
+        },
+        "eye": {
+          "id": "eye2",
+          "angle": 11
+        },
+        "eyebrow": {
+          "id": "eyebrow6",
+          "angle": -5
+        },
+        "hair": {
+          "id": "tall-fade",
+          "color": "#272421",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose12",
+          "flip": true,
+          "size": 0.79
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Joe",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/joe-junkin-1976-240.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Junkin",
+      "pid": 476,
+      "ratings": [
+        {
+          "hgt": 53,
+          "stre": 10,
+          "spd": 15,
+          "endu": 54,
+          "pss": 14,
+          "wst": 13,
+          "sst": 6,
+          "stk": 6,
+          "oiq": 14,
+          "chk": 12,
+          "blk": 2,
+          "fcf": 2,
+          "diq": 5,
+          "glk": 41,
+          "fuzz": 2.4398456519648124,
+          "ovr": 31,
+          "pos": "G",
+          "pot": 49,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 11,
+            "W": 11,
+            "D": 5,
+            "G": 31
+          },
+          "pots": {
+            "C": 26,
+            "W": 21,
+            "D": 20,
+            "G": 49
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 59,
+        "ovr": 40,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.46,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#ddb7a0",
+          "size": 1.05
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.94
+        },
+        "head": {
+          "id": "head3",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line5"
+        },
+        "smileLine": {
+          "id": "line2",
+          "size": 1.73
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "muttonGoatee2Stache"
+        },
+        "eye": {
+          "id": "eye10",
+          "angle": 11
+        },
+        "eyebrow": {
+          "id": "eyebrow8",
+          "angle": -4
+        },
+        "hair": {
+          "id": "faux-hawk",
+          "color": "#272421",
+          "flip": true
+        },
+        "mouth": {
+          "id": "smile4",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose13",
+          "flip": true,
+          "size": 1.11
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Fern",
+      "hgt": 69,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/fern-rivard-1973-1516.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Rivard",
+      "pid": 477,
+      "pos": "G",
+      "ratings": [
+        {
+          "hgt": 44,
+          "stre": 10,
+          "spd": 5,
+          "endu": 41,
+          "pss": 10,
+          "wst": 5,
+          "sst": 12,
+          "stk": 5,
+          "oiq": 13,
+          "chk": 6,
+          "blk": 12,
+          "fcf": 12,
+          "diq": 4,
+          "glk": 50,
+          "fuzz": -5.507827600017605,
+          "ovr": 40,
+          "pos": "G",
+          "pot": 59,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 10,
+            "W": 8,
+            "D": 4,
+            "G": 40
+          },
+          "pots": {
+            "C": 23,
+            "W": 22,
+            "D": 20,
+            "G": 59
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 160
+    },
+    {
+      "born": {
+        "year": 1943,
+        "loc": "Manitoba, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 52,
+        "ovr": 46,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.51,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#f2d6cb",
+          "size": 1.02
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.85
+        },
+        "head": {
+          "id": "head10",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.39
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye17",
+          "angle": -4
+        },
+        "eyebrow": {
+          "id": "eyebrow7",
+          "angle": -5
+        },
+        "hair": {
+          "id": "spike2",
+          "color": "#CC9966",
+          "flip": false
+        },
+        "mouth": {
+          "id": "angry",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose4",
+          "flip": false,
+          "size": 1.03
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Joe",
+      "hgt": 70,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/joe-daley-1976-168.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Daley",
+      "pid": 478,
+      "ratings": [
+        {
+          "hgt": 52,
+          "stre": 1,
+          "spd": 8,
+          "endu": 59,
+          "pss": 3,
+          "wst": 0,
+          "sst": 8,
+          "stk": 2,
+          "oiq": 4,
+          "chk": 4,
+          "blk": 2,
+          "fcf": 1,
+          "diq": 0,
+          "glk": 56,
+          "fuzz": 2.2663383168894677,
+          "ovr": 46,
+          "pos": "G",
+          "pot": 52,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 4,
+            "W": 4,
+            "D": 0,
+            "G": 46
+          },
+          "pots": {
+            "C": 6,
+            "W": 10,
+            "D": 6,
+            "G": 52
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 160
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 50,
+        "ovr": 30,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.14,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body2",
+          "color": "#f2d6cb",
+          "size": 1.05
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.97
+        },
+        "head": {
+          "id": "head1",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line3"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 1.07
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye3",
+          "angle": 5
+        },
+        "eyebrow": {
+          "id": "eyebrow2",
+          "angle": 15
+        },
+        "hair": {
+          "id": "curlyFade2",
+          "color": "#5A3825",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth2",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose8",
+          "flip": true,
+          "size": 0.57
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Ted",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/ted-ouimet-1975-177.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Ouimet",
+      "pid": 619,
+      "pos": "G",
+      "ratings": [
+        {
+          "hgt": 65,
+          "stre": 12,
+          "spd": 18,
+          "endu": 44,
+          "pss": 6,
+          "wst": 8,
+          "sst": 6,
+          "stk": 11,
+          "oiq": 10,
+          "chk": 6,
+          "blk": 10,
+          "fcf": 10,
+          "diq": 10,
+          "glk": 40,
+          "fuzz": -0.22241266690046937,
+          "ovr": 30,
+          "pos": "G",
+          "pot": 51,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 12,
+            "W": 9,
+            "D": 7,
+            "G": 30
+          },
+          "pots": {
+            "C": 30,
+            "W": 23,
+            "D": 23,
+            "G": 50
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 175
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 52,
+        "ovr": 36,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.86,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body4",
+          "color": "#f2d6cb",
+          "size": 1.05
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 0.8
+        },
+        "head": {
+          "id": "head8",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line3"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.88
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye2",
+          "angle": 6
+        },
+        "eyebrow": {
+          "id": "eyebrow19",
+          "angle": -6
+        },
+        "hair": {
+          "id": "crop-fade2",
+          "color": "#CC9966",
+          "flip": false
+        },
+        "mouth": {
+          "id": "smile4",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose2",
+          "flip": false,
+          "size": 0.78
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Fred",
+      "hgt": 69,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/fred-speck-1975-250.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Speck",
+      "pid": 620,
+      "pos": "C",
+      "ratings": [
+        {
+          "hgt": 48,
+          "stre": 30,
+          "spd": 25,
+          "endu": 54,
+          "pss": 27,
+          "wst": 37,
+          "sst": 28,
+          "stk": 41,
+          "oiq": 40,
+          "chk": 21,
+          "blk": 14,
+          "fcf": 38,
+          "diq": 19,
+          "glk": 8,
+          "fuzz": -0.5044519260678323,
+          "ovr": 36,
+          "pos": "C",
+          "pot": 52,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 36,
+            "W": 33,
+            "D": 24,
+            "G": 0
+          },
+          "pots": {
+            "C": 52,
+            "W": 48,
+            "D": 40,
+            "G": 21
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 160
+    },
+    {
+      "born": {
+        "year": 1935,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 46,
+        "ovr": 46,
+        "skills": [
+          "Pw"
+        ]
+      },
+      "face": {
+        "fatness": 0.27,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body4",
+          "color": "#bb876f",
+          "size": 1.05
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 0.91
+        },
+        "head": {
+          "id": "head8",
+          "shave": "rgba(0,0,0,0.09)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line3",
+          "size": 0.9
+        },
+        "miscLine": {
+          "id": "forehead1"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye14",
+          "angle": 9
+        },
+        "eyebrow": {
+          "id": "eyebrow12",
+          "angle": 7
+        },
+        "hair": {
+          "id": "crop-fade",
+          "color": "#1c1008",
+          "flip": true
+        },
+        "mouth": {
+          "id": "smile-closed",
+          "flip": true
+        },
+        "nose": {
+          "id": "small",
+          "flip": true,
+          "size": 1.11
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Myron",
+      "hgt": 71,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/myron-stankiewicz-1953-2385.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Stankiewicz",
+      "pid": 621,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 51,
+          "stre": 51,
+          "spd": 17,
+          "endu": 57,
+          "pss": 31,
+          "wst": 51,
+          "sst": 49,
+          "stk": 50,
+          "oiq": 42,
+          "chk": 57,
+          "blk": 10,
+          "fcf": 15,
+          "diq": 10,
+          "glk": 0,
+          "fuzz": 0.09347084792410733,
+          "ovr": 46,
+          "pos": "W",
+          "pot": 46,
+          "season": 1968,
+          "skills": [
+            "Pw"
+          ],
+          "ovrs": {
+            "C": 40,
+            "W": 46,
+            "D": 38,
+            "G": 0
+          },
+          "pots": {
+            "C": 40,
+            "W": 46,
+            "D": 38,
+            "G": 0
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 55,
+        "ovr": 37,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.31,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#ddb7a0",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.43
+        },
+        "head": {
+          "id": "head13",
+          "shave": "rgba(0,0,0,0.16)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.78
+        },
+        "miscLine": {
+          "id": "forehead5"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye9",
+          "angle": 2
+        },
+        "eyebrow": {
+          "id": "eyebrow20",
+          "angle": 9
+        },
+        "hair": {
+          "id": "cornrows",
+          "color": "#CC9966",
+          "flip": true
+        },
+        "mouth": {
+          "id": "mouth3",
+          "flip": true
+        },
+        "nose": {
+          "id": "nose10",
+          "flip": true,
+          "size": 1.01
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Garry",
+      "hgt": 68,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/garry-swain-1975-169.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Swain",
+      "pid": 622,
+      "ratings": [
+        {
+          "hgt": 44,
+          "stre": 21,
+          "spd": 33,
+          "endu": 52,
+          "pss": 46,
+          "wst": 47,
+          "sst": 30,
+          "stk": 32,
+          "oiq": 16,
+          "chk": 32,
+          "blk": 19,
+          "fcf": 47,
+          "diq": 9,
+          "glk": 15,
+          "fuzz": -1.3869940549014985,
+          "ovr": 37,
+          "pos": "C",
+          "pot": 52,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 37,
+            "W": 34,
+            "D": 24,
+            "G": 5
+          },
+          "pots": {
+            "C": 55,
+            "W": 52,
+            "D": 45,
+            "G": 32
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 164
+    },
+    {
+      "born": {
+        "year": 1941,
+        "loc": "Quebec, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 48,
+        "ovr": 48,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.23,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body",
+          "color": "#f2d6cb",
+          "size": 1.02
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear2",
+          "size": 1.45
+        },
+        "head": {
+          "id": "head8",
+          "shave": "rgba(0,0,0,0)"
+        },
+        "eyeLine": {
+          "id": "line1"
+        },
+        "smileLine": {
+          "id": "line3",
+          "size": 2.1
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye11",
+          "angle": -3
+        },
+        "eyebrow": {
+          "id": "eyebrow12",
+          "angle": 9
+        },
+        "hair": {
+          "id": "crop",
+          "color": "#3D2314",
+          "flip": true
+        },
+        "mouth": {
+          "id": "straight",
+          "flip": true
+        },
+        "nose": {
+          "id": "small",
+          "flip": true,
+          "size": 0.54
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "headband"
+        }
+      },
+      "firstName": "Guy",
+      "hgt": 68,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/guy-trottier-1975-250.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Trottier",
+      "pid": 623,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 43,
+          "stre": 38,
+          "spd": 62,
+          "endu": 72,
+          "pss": 40,
+          "wst": 51,
+          "sst": 44,
+          "stk": 10,
+          "oiq": 57,
+          "chk": 25,
+          "blk": 27,
+          "fcf": 17,
+          "diq": 26,
+          "glk": 3,
+          "fuzz": 0.1522200471893418,
+          "ovr": 48,
+          "pos": "W",
+          "pot": 48,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 43,
+            "W": 48,
+            "D": 36,
+            "G": 0
+          },
+          "pots": {
+            "C": 44,
+            "W": 48,
+            "D": 36,
+            "G": 0
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 165
+    },
+    {
+      "born": {
+        "year": 1948,
+        "loc": "Ontario, Canada"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 60,
+        "ovr": 45,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.93,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#f2d6cb",
+          "size": 0.96
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.46
+        },
+        "head": {
+          "id": "head16",
+          "shave": "rgba(0,0,0,0.04)"
+        },
+        "eyeLine": {
+          "id": "line4"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 1.18
+        },
+        "miscLine": {
+          "id": "none"
+        },
+        "facialHair": {
+          "id": "harley2"
+        },
+        "eye": {
+          "id": "eye13",
+          "angle": -2
+        },
+        "eyebrow": {
+          "id": "eyebrow18",
+          "angle": 3
+        },
+        "hair": {
+          "id": "short-bald",
+          "color": "#272421",
+          "flip": false
+        },
+        "mouth": {
+          "id": "smile4",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose6",
+          "flip": false,
+          "size": 0.9
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Tom",
+      "hgt": 70,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/tom-webster-1967-5133.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Webster",
+      "pid": 624,
+      "pos": "W",
+      "ratings": [
+        {
+          "hgt": 50,
+          "stre": 29,
+          "spd": 43,
+          "endu": 58,
+          "pss": 39,
+          "wst": 58,
+          "sst": 49,
+          "stk": 21,
+          "oiq": 37,
+          "chk": 42,
+          "blk": 4,
+          "fcf": 37,
+          "diq": 8,
+          "glk": 4,
+          "fuzz": 0.7887636536036168,
+          "ovr": 45,
+          "pos": "W",
+          "pot": 60,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 40,
+            "W": 45,
+            "D": 30,
+            "G": 0
+          },
+          "pots": {
+            "C": 55,
+            "W": 60,
+            "D": 51,
+            "G": 27
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 170
+    },
+    {
+      "born": {
+        "year": 1946,
+        "loc": "Saskatchewan, Canada"
+      },
+      "college": "Denver",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 49,
+        "ovr": 38,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.91,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body5",
+          "color": "#ddb7a0",
+          "size": 0.97
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.17
+        },
+        "head": {
+          "id": "head9",
+          "shave": "rgba(0,0,0,0.14)"
+        },
+        "eyeLine": {
+          "id": "line2"
+        },
+        "smileLine": {
+          "id": "none",
+          "size": 0.54
+        },
+        "miscLine": {
+          "id": "chin2"
+        },
+        "facialHair": {
+          "id": "harley1-sb-2"
+        },
+        "eye": {
+          "id": "eye10",
+          "angle": -10
+        },
+        "eyebrow": {
+          "id": "eyebrow12",
+          "angle": -8
+        },
+        "hair": {
+          "id": "bald",
+          "color": "#3D2314",
+          "flip": false
+        },
+        "mouth": {
+          "id": "mouth7",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose7",
+          "flip": false,
+          "size": 1.18
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Jim",
+      "hgt": 70,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/jim-wiste-1976-172.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Wiste",
+      "pid": 625,
+      "pos": "C",
+      "ratings": [
+        {
+          "hgt": 49,
+          "stre": 25,
+          "spd": 47,
+          "endu": 55,
+          "pss": 22,
+          "wst": 30,
+          "sst": 20,
+          "stk": 32,
+          "oiq": 34,
+          "chk": 35,
+          "blk": 37,
+          "fcf": 34,
+          "diq": 32,
+          "glk": 14,
+          "fuzz": 1.0128312476724866,
+          "ovr": 38,
+          "pos": "C",
+          "pot": 49,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 38,
+            "W": 32,
+            "D": 30,
+            "G": 4
+          },
+          "pots": {
+            "C": 49,
+            "W": 46,
+            "D": 42,
+            "G": 22
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 185
+    },
+    {
+      "born": {
+        "year": 1947,
+        "loc": "Bristol, England"
+      },
+      "college": "",
+      "draft": {
+        "round": 0,
+        "pick": 0,
+        "tid": -1,
+        "originalTid": -1,
+        "year": 1968,
+        "pot": 48,
+        "ovr": 30,
+        "skills": []
+      },
+      "face": {
+        "fatness": 0.51,
+        "teamColors": [
+          "#89bfd3",
+          "#7a1319",
+          "#07364f"
+        ],
+        "hairBg": {
+          "id": "none"
+        },
+        "body": {
+          "id": "body3",
+          "color": "#f2d6cb",
+          "size": 0.96
+        },
+        "jersey": {
+          "id": "hockey"
+        },
+        "ear": {
+          "id": "ear3",
+          "size": 1.3
+        },
+        "head": {
+          "id": "head18",
+          "shave": "rgba(0,0,0,0.2)"
+        },
+        "eyeLine": {
+          "id": "none"
+        },
+        "smileLine": {
+          "id": "line4",
+          "size": 1.4
+        },
+        "miscLine": {
+          "id": "freckles1"
+        },
+        "facialHair": {
+          "id": "none"
+        },
+        "eye": {
+          "id": "eye8",
+          "angle": 9
+        },
+        "eyebrow": {
+          "id": "eyebrow10",
+          "angle": -10
+        },
+        "hair": {
+          "id": "short2",
+          "color": "#CC9966",
+          "flip": false
+        },
+        "mouth": {
+          "id": "closed",
+          "flip": false
+        },
+        "nose": {
+          "id": "nose2",
+          "flip": false,
+          "size": 0.88
+        },
+        "glasses": {
+          "id": "none"
+        },
+        "accessories": {
+          "id": "none"
+        }
+      },
+      "firstName": "Chris",
+      "hgt": 72,
+      "imgURL": "https://www.hockeydb.com/ihdb/photos/chris-worthy-1976-166.jpg",
+      "injury": {
+        "type": "Healthy",
+        "gamesRemaining": 0
+      },
+      "injuries": [],
+      "lastName": "Worthy",
+      "pid": 626,
+      "pos": "G",
+      "ratings": [
+        {
+          "hgt": 70,
+          "stre": 3,
+          "spd": 5,
+          "endu": 40,
+          "pss": 11,
+          "wst": 14,
+          "sst": 14,
+          "stk": 12,
+          "oiq": 8,
+          "chk": 7,
+          "blk": 7,
+          "fcf": 9,
+          "diq": 7,
+          "glk": 40,
+          "fuzz": -1.4017470831760432,
+          "ovr": 30,
+          "pos": "G",
+          "pot": 48,
+          "season": 1968,
+          "skills": [],
+          "ovrs": {
+            "C": 11,
+            "W": 12,
+            "D": 6,
+            "G": 30
+          },
+          "pots": {
+            "C": 29,
+            "W": 28,
+            "D": 25,
+            "G": 48
+          }
+        }
+      ],
+      "relatives": [],
+      "tid": -2,
+      "weight": 180
+    }
+  ]
+}
