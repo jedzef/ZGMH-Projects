@@ -1,0 +1,24 @@
+        {
+          "tid":5,
+          "cid": 1,
+          "did": 4,
+          "region": "Boston",
+          "name": "Bruins",
+          "abbrev": "BOS",
+          "imgURL": "https://content.sportslogos.net/logos/1/3/full/boston-bruins-logo-primary-2026-367442026.png",
+          "colors": [
+            "#ffffff",
+            "#000000",
+            "#fcb514"
+          ],
+          "jersey": "hockey2",
+          "season": 2026,
+          "won": 0,
+          "lost": 0,
+          "otl": 0,
+          "playoffRoundsWon": -1
+        }
+      ]},
+{"tid":6,"abbrev":"MTM","region":"Montréal","name":"Maroons","imgURL":"https://content.sportslogos.net/logos/1/40/full/255.png","imgURLSmall":"https://content.sportslogos.net/logos/1/40/full/7107.gif","colors":["#390000","#ffffff","#390000"],"jersey":"hockey2","cid":1,"did":4,"pop":4.324212447834647,"stadiumCapacity":17500,"disabled":true},
+{"tid":7,"abbrev":"PHQ","region":"Philadelphia","name":"Quakers","imgURL":"https://content.sportslogos.net/logos/1/48/full/hvegege8x6kshi5e0e7fk5k3j.png","colors":["#fc6304","#000000","#000000"],"jersey":"hockey","cid":1,"did":4,"pop":5.281397594201701,"stadiumCapacity":17500,"disabled":true},
+{"tid":8,"abbrev":"BRO","region":"Brooklyn","name":"Americans","imgURL":"https://content.sportslogos.net/logos/1/998/full/8410_brooklyn_americans-primary-1942.png","imgURLSmall":"https://content.sportslogos.net/logos/1/998/full/22hfgtld3jtnfnbqmls2ejruo.gif","colors":["#ffffff","#c60000","#040084"],"jersey":"hockey3","cid":1,"did":2,"pop":21.874031519086788,"stadiumCapacity":17500,"disabled":true},
