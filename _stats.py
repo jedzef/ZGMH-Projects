@@ -60,15 +60,16 @@ teamnum = {
     "SEA": 38,
     "UTA": 39
 }
-state = dict(map(reversed, us_state_to_abbrev.items()))
-ctyd = {'AUS':'Austria', 'AUT':'Australia', 'BEL':'Belgium', 'BGR':'Bulgaria', 'BHS':'Bahamas', 'BLR':'Belarus', 'BRA':'Brazil', 'BRN':'Brunei Darussalam', 'CAN':'Canada', 'CZE':'Czech Republic', 'CHE':'Switzerland', 'DEU':'Germany', 'DNK':'Denmark', 'EST':'Estonia', 'FIN':'Finland', "FRA":"France", "GBR":"United Kingdom", "HRV":"Croatia", 'HTI':"Haiti", "IDN":"Indonesia", "ITA":"Italy", "JAM":"Jamaica", "JPN":"Japan", "KAZ":"Kazakhstan", "KOR":"South Korea", "LTU":"Lithuania", "LVA":"Latvia", "NGA":"Nigeria", "NLD":"Netherlands", "NOR":"Norway", "POL":"Poland", "PRY":"Paraguay", "RUS":"Russia", "SVK":"Slovakia", "SVN":"Slovenia", "SWE":"Sweden", "TWN":"Taiwan", "TZA":"Tanzania", "UKR":"Ukraine", "USA":"USA", "UZB":"Uzbekistan", "VEN":"Venezuela", "ZAF":"South Africa"}
 outfile = open("TEST.txt", 'w')
-with open("Skaters.csv", 'r') as infile:
+with open("gretzky.csv", 'r') as infile:
     reader = csv.reader(infile)
     header = next(reader)
     for row in reader:
-# BioInfo
-        na = row[0]
+        lg = row[3]
+        sea = row[0]
+          season = sea.split('-')
+          yr = season[1]
+        team = row[2]
         sep = na.split(' ')
         firstname = sep[0]
         lastname = sep[1]
@@ -200,3 +201,4 @@ with open("Skaters.csv", 'r') as infile:
         outfile.write('"glk": ' + str(glk) + '}]},\n')
 infile.close()
 outfile.close()
+
