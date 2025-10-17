@@ -67,13 +67,18 @@ with open("gretzky.csv", 'r') as infile:
     for row in reader:
         lg = row[3]
         sea = row[0]
-          season = sea.split('-')
-          yr = season[1]
-        team = row[2]
+          yrs = sea.split('-')
+          season = str(int(yrs[0])+1)
+        team = teamnum[row[2]]
+        pos = post[row[4]]
+
+
+
+        
         sep = na.split(' ')
         firstname = sep[0]
         lastname = sep[1]
-        pos = post[row[2]]
+
         ht = row[26]
         wt = row[27]
         if wt == '--':
@@ -201,4 +206,5 @@ with open("gretzky.csv", 'r') as infile:
         outfile.write('"glk": ' + str(glk) + '}]},\n')
 infile.close()
 outfile.close()
+
 
