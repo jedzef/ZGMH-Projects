@@ -66,11 +66,34 @@ with open("gretzky.csv", 'r') as infile:
     header = next(reader)
     for row in reader:
         lg = row[3]
+        if lg != 'NHL'
+            next(reader)
+        else continue
         sea = row[0]
           yrs = sea.split('-')
           season = str(int(yrs[0])+1)
-        team = teamnum[row[2]]
+        tid = teamnum[row[2]]
         pos = post[row[4]]
+        gp = row[5]
+        pm = row[9]
+        pim = row[10]
+        evg = row[11]
+        ppg = row[12]
+        shg = row[13]
+        gwg = row[14]
+        eva = row[15]
+        ppa = row[16]
+        sha = row[17]
+        sh = row[18]
+        toi = row[19]
+        if toi != ''
+            time = toi.split(':')
+            min = str(int(time[0])+1)
+        else continue
+        gc = row[20]
+        ops = row[26]
+        dps = row[27]
+        
 
 
 
@@ -206,5 +229,6 @@ with open("gretzky.csv", 'r') as infile:
         outfile.write('"glk": ' + str(glk) + '}]},\n')
 infile.close()
 outfile.close()
+
 
 
