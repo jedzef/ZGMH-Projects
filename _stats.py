@@ -3,6 +3,8 @@ import random
 
 name = []
 post = {'C':'C', 'LW':'W', 'RW':'W', 'D':'D', 'G':'G'}
+seasons = []
+statstids = []
 teamnum = {
     "MTL": 0,
     "TOR": 1,
@@ -60,19 +62,26 @@ teamnum = {
     "SEA": 38,
     "UTA": 39
 }
-outfile = open("TEST.txt", 'w')
-with open("gretzky.csv", 'r') as infile:
+outfile = open("TEST.txt", 'w') 
+with open("gretzky.csv", 'r') as infile:    
     reader = csv.reader(infile)
     header = next(reader)
     for row in reader:
         lg = row[3]
-        if lg != 'NHL'
+        if lg != 'NHL':
             next(reader)
-        else continue
+        else:
+            pass
         sea = row[0]
           yrs = sea.split('-')
           season = str(int(yrs[0])+1)
+          seasons = seasons + 
         tid = teamnum[row[2]]
+        tidlist = [tid]
+        if tid != statstids[-1]:
+            statstids = statstids + tidlist
+        else:
+            pass
         pos = post[row[4]]
         gp = row[5]
         pm = row[9]
@@ -86,149 +95,32 @@ with open("gretzky.csv", 'r') as infile:
         sha = row[17]
         sh = row[18]
         toi = row[19]
-        if toi != ''
+        if toi != '':
             time = toi.split(':')
             min = str(int(time[0])+1)
-        else continue
+        else:
+            pass
         gc = row[20]
         ops = row[26]
-        dps = row[27]
-        
-
-
-
-        
-        sep = na.split(' ')
-        firstname = sep[0]
-        lastname = sep[1]
-
-        ht = row[26]
-        wt = row[27]
-        if wt == '--':
-            wt = 0
-        dob = row[22]
-        sep1 = dob.split('-')
-        born = sep1[0]
-        if row[24] == '--':
-            loc1 = row[23]
-        else:
-            loc1 = state[row[24]]
-        loc2 = ctyd[row[25]]
-        loc = loc1 + ', ' + loc2
-        deb = row[28]
-        draft = deb[:len(deb)//2]
-
-# Ratings
+        dps = row[27]    
+# lol
         glk = random.randint(0,10)
-        gp = int(row[3])
-        g = int(row[4])
-        a = int(row[5])
-        if row[7] != '--':
-            pm = int(row[7])
-        else:
-            pm = 0
-        pim = int(row[8])
-        if row[21] != '--' and pos == 'C':
-            fo = int(float(row[21])) + 30
-            if fo >= 92:
-                fo = random.randint(50,99)
-        else:
-            fo = random.randint(4,49)
-        if gp >= 1000:
-            end = random.randint(90,100)
-        if 500 <= gp < 1000:
-            end = random.randint(70,89)
-        if 100 <= gp < 500:
-            end = random.randint(50,69)
-        if gp < 100:
-            end = random.randint(9,49)      
-        if ((g+a)/gp) >= 1:
-            ofa = random.randint(90,100)
-        if 0.8 <= ((g+a)/gp) < 1:
-            ofa = random.randint(75,89)
-        if 0.5 <= ((g+a)/gp) < 0.79:
-            ofa = random.randint(60,74)
-        if ((g+a)/gp) < 0.5:
-            ofa = random.randint(20,54)
-        if pos == 'D':
-            spd = random.randint(1,49)
-            stk = random.randint(1,39)
-            blk = random.randint(50,99)
-        else:
-            spd = random.randint(50,100)
-            stk = random.randint(40,90)
-            blk = random.randint(10,59)
-        if (a/gp) >= 0.8:
-            pss = random.randint(85,100)
-        if 0.5 <= (a/gp) < 0.79:
-            pss = random.randint(60,84)
-        if 0.25 <= (a/gp) < 0.49:
-            pss = random.randint(30,55)
-        if (a/gp) < 0.24:
-            pss = random.randint(4,29)
-        if (g/gp) >= 0.58 and pos != 'D':
-            wst = random.randint(85,100)
-            sst = random.randint(60,84)
-        if 0.4 <= (g/gp) < 0.57 and pos != 'D':
-            wst = random.randint(60,84)
-            sst = random.randint(30,59)
-        if 0.2 <= (g/gp) < 0.39 and pos != 'D':
-            wst = random.randint(30,59)
-            sst = random.randint(14,29) 
-        if (g/gp) < 0.2 and pos != 'D':
-            wst = random.randint(4,29)
-            sst = random.randint(1,13)
-        if (g/gp) >= 0.28 and pos == 'D':
-            sst = random.randint(85,100)
-            wst = random.randint(60,84)
-        if 0.18 <= (g/gp) < 0.27 and pos == 'D':
-            sst = random.randint(60,84)
-            wst = random.randint(30,59)
-        if 0.08 <= (g/gp) < 0.17 and pos == 'D':
-            sst = random.randint(30,59)
-            wst = random.randint(14,29) 
-        if (g/gp) < 0.08 and pos == 'D':
-            sst = random.randint(4,29)
-            wst = random.randint(1,13)
-        if (pim/gp) >= 3:
-            chk = random.randint(85,99)
-        if 2.5 <= (pim/gp) < 3:
-            chk = random.randint(75,84)
-        if 2 <= (pim/gp) < 2.4:
-            chk = random.randint(60,74)
-        if 1.5 <= (pim/gp) < 2:
-            chk = random.randint(50,59)
-        if 1 <= (pim/gp) < 1.4:
-            chk = random.randint(35,49)
-        if 0.5 <= (pim/gp) < 0.9:
-            chk = random.randint(25,34)
-        if (pim/gp) < 0.49:
-            chk = random.randint(1,24)
-        if pm >= 0 and pos == 'D':
-            dfa = random.randint(70,99)
-        if pm < 0 and pos == 'D':
-            dfa = random.randint(40,69)
-        if pm >= 0 and pos != 'D':
-            dfa = random.randint(40,69)
-        if pm < 0 and pos != 'D':
-            dfa = random.randint(10,39)           
-        hgt = int(50 + (((((int(ht)) - 72.6778)/3.14282)) * 10.82))
-        stre = int(50 + (((((int(wt)) - 197.878)/15.7763)) * 2.155))
-        outfile.write('{\n"born": {"year": ' + born + ',' + '"loc": "' + loc + '"},\n')
-        outfile.write('"draft": {"round": 0, "pick": 0, "tid": -1, "originalTid": -1, "year": ' + draft + '},\n')
-        outfile.write('"tid": -2, "pos": "' + pos + '",\n')	  
-        outfile.write('"firstName": "' + firstname + '", "lastName": "' + lastname + '",\n')
-        outfile.write('"hgt": ' + str(ht) + ', "weight": ' + str(wt) + ',\n')
-        outfile.write('"imgURL": "/img/logos-secondary/PRO.svg",\n')
-        outfile.write('"ratings": [{"season": ' + draft + ', "pos": "' + pos + '",\n')
-        outfile.write('"hgt": ' + str(hgt) + ',\n"stre": ' + str(stre) + ',\n')
-        outfile.write('"spd": ' + str(spd) + ',\n"endu": ' + str(end) + ',\n')
-        outfile.write('"pss": ' + str(pss) + ',\n"wst": ' + str(wst) + ',\n"sst": ' + str(sst) + ',\n')
-        outfile.write('"stk": ' + str(stk) + ',\n"oiq": ' + str(ofa) + ',\n"chk": ' + str(chk) + ',\n')
-        outfile.write('"blk": ' + str(blk) + ',\n"fcf": ' + str(fo) + ',\n"diq": ' + str(dfa) + ',\n')        
+# outfile
+        outfile.write('"stats":
+
+                      
+        outfile.write('"ratings": [{"season": ' + season + ', "pos": "' + pos + '",\n')
+        outfile.write('"hgt": 50,\n"stre": 50,\n')
+        outfile.write('"spd": 50,\n"endu": 50,\n')
+        outfile.write('"pss": 50,\n"wst": 50,\n"sst": 50,\n')
+        outfile.write('"stk": 50,\n"oiq": 50,\n"chk": 50,\n')
+        outfile.write('"blk": 50,\n"fcf": 50,\n"diq": 50,\n')        
         outfile.write('"glk": ' + str(glk) + '}]},\n')
+outfile.write('"statsTids":' + str(statstids) + ','\n')                      
+outfile.write('"tid": -3, "retiredYear":' + season + ','\n')
 infile.close()
 outfile.close()
+
 
 
 
