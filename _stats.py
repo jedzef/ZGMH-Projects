@@ -5,6 +5,7 @@ name = []
 post = {'C':'C', 'LW':'W', 'RW':'W', 'D':'D', 'G':'G'}
 seasons = []
 statstids = []
+glk = random.randint(0,10)
 teamnum = {
     "MTL": 0,
     "TOR": 1,
@@ -70,18 +71,15 @@ with open("gretzky.csv", 'r') as infile:
         lg = row[3]
         if lg != 'NHL':
             next(reader)
-        else:
-            pass
         sea = row[0]
           yrs = sea.split('-')
           season = str(int(yrs[0])+1)
-          seasons = seasons + 
+          seasonlist = [season]
+          seasons = seasons + seasonlist
         tid = teamnum[row[2]]
         tidlist = [tid]
         if tid != statstids[-1]:
             statstids = statstids + tidlist
-        else:
-            pass
         pos = post[row[4]]
         gp = row[5]
         pm = row[9]
@@ -99,27 +97,29 @@ with open("gretzky.csv", 'r') as infile:
             time = toi.split(':')
             min = str(int(time[0])+1)
         else:
-            pass
+            min = '1'
         gc = row[20]
         ops = row[26]
-        dps = row[27]    
-# lol
-        glk = random.randint(0,10)
-# outfile
-        outfile.write('"stats":
+        dps = row[27]
 
-                      
-        outfile.write('"ratings": [{"season": ' + season + ', "pos": "' + pos + '",\n')
-        outfile.write('"hgt": 50,\n"stre": 50,\n')
-        outfile.write('"spd": 50,\n"endu": 50,\n')
-        outfile.write('"pss": 50,\n"wst": 50,\n"sst": 50,\n')
-        outfile.write('"stk": 50,\n"oiq": 50,\n"chk": 50,\n')
-        outfile.write('"blk": 50,\n"fcf": 50,\n"diq": 50,\n')        
-        outfile.write('"glk": ' + str(glk) + '}]},\n')
-outfile.write('"statsTids":' + str(statstids) + ','\n')                      
+# outfile
+        outfile.write('"stats":[{"playoffs": false, "season": ' + season + ',\n')
+        outfile.write('"tid": ' + str(tid) + ',\n')
+
+
+for x in seasons:
+    outfile.write('"ratings": [{"season": ' + season + ', "pos": "' + pos + '",\n')
+    outfile.write('"hgt": 50,\n"stre": 50,\n')
+    outfile.write('"spd": 50,\n"endu": 50,\n')
+    outfile.write('"pss": 50,\n"wst": 50,\n"sst": 50,\n')
+    outfile.write('"stk": 50,\n"oiq": 50,\n"chk": 50,\n')
+    outfile.write('"blk": 50,\n"fcf": 50,\n"diq": 50,\n')
+    outfile.write('"glk": ' + str(glk) + '}]},\n')
+outfile.write('"statsTids":' + str(statstids) + ','\n')
 outfile.write('"tid": -3, "retiredYear":' + season + ','\n')
 infile.close()
 outfile.close()
+
 
 
 
