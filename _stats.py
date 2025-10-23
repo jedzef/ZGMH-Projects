@@ -67,6 +67,7 @@ outfile = open("TEST.txt", 'w')
 with open("gretzky.csv", 'r') as infile:    
     reader = csv.reader(infile)
     header = next(reader)
+    outfile.write('"stats":[\n')
     for row in reader:
         lg = row[3]
         if lg != 'NHL':
@@ -103,22 +104,31 @@ with open("gretzky.csv", 'r') as infile:
         dps = row[27]
 
 # outfile
-        outfile.write('"stats":[{"playoffs": false, "season": ' + season + ',\n')
-        outfile.write('"tid": ' + str(tid) + ',\n')
+        outfile.write({"playoffs": false, "season": ' + season + ',\n')
+        outfile.write('"tid": ' + str(tid) + ', "gc": ' + str(gc) + ',\n')
+        outfile.write('"ops": ' + str(ops) + ', "dps": ' + str(dps) + ',\n')
+        outfile.write('"gp": ' + str(gp) + ', "gpSkater": ' + str(gp) + ',\n')
+        outfile.write('"min": ' + str(min) + ', "pm": ' + str(pm) + ',\n')
+        outfile.write('"pim": ' + str(pim) + ', "evG": ' + str(evg) + ',\n')
+        outfile.write('"ppG": ' + str(ppg) + ', "shG": ' + str(shg) + ',\n')
+        outfile.write('"gwG": ' + str(gwg) + ', "evA": ' + str(eva) + ',\n')
+        outfile.write('"ppA": ' + str(ppa) + ', "shA": ' + str(sha) + ',\n')
+        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": 99},\n')
 
-
+outfile.write('],\n"ratings":[')
 for x in seasons:
-    outfile.write('"ratings": [{"season": ' + season + ', "pos": "' + pos + '",\n')
+    outfile.write({"season": ' + str(seasons[x]) + ', "pos": "' + pos + '",\n')
     outfile.write('"hgt": 50,\n"stre": 50,\n')
     outfile.write('"spd": 50,\n"endu": 50,\n')
     outfile.write('"pss": 50,\n"wst": 50,\n"sst": 50,\n')
     outfile.write('"stk": 50,\n"oiq": 50,\n"chk": 50,\n')
     outfile.write('"blk": 50,\n"fcf": 50,\n"diq": 50,\n')
-    outfile.write('"glk": ' + str(glk) + '}]},\n')
-outfile.write('"statsTids":' + str(statstids) + ','\n')
-outfile.write('"tid": -3, "retiredYear":' + season + ','\n')
+    outfile.write('"glk": ' + str(glk) + '},\n')
+outfile.write('],\n"statsTids":' + str(statstids) + ', "hof": 1\n')
+outfile.write('"tid": -3, "retiredYear":' + season + ', '\n')
 infile.close()
 outfile.close()
+
 
 
 
