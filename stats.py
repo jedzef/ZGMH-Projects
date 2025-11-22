@@ -7,6 +7,7 @@ statstids = []
 glk = random.randint(0,10)
 teamnum = {
     "MTL": 0,
+    "TRS": 1,
     "TOR": 1,
     "MTW": 2,
     "OTS": 3,
@@ -63,6 +64,7 @@ teamnum = {
     "UTA": 39
 }
 ywt = 1
+poslist = []
 outfile = open("stats.txt", 'w')
 with open("stats.csv", 'r') as infile:
     reader = csv.reader(infile)
@@ -72,8 +74,7 @@ with open("stats.csv", 'r') as infile:
         sea = row[0]
         yrs = sea.split('-')
         season = str(int(yrs[0])+1)
-        seasonlist = [season]
-        seasons = seasons + seasonlist
+        seasons = seasons + [season]
         if row[2] == '2TM':
             next(reader)
         else:
@@ -94,18 +95,31 @@ with open("stats.csv", 'r') as infile:
                 statstids = statstids + tidlist
                 ywt = 1
         pos = post[row[4]]
+        poslist = poslist + [pos]
         gp = row[5]
         pm = row[9]
         if pm == '':
             pm = 0
         pim = row[10]
         evg = row[11]
+        if evg == '':
+            evg = row[6]
         ppg = row[12]
+        if ppg == '':
+            ppg = 0
         shg = row[13]
+        if shg == '':
+            shg = 0
         gwg = row[14]
         eva = row[15]
+        if eva =='':
+            eva = row[7]
         ppa = row[16]
+        if ppa == '':
+            ppa = 0
         sha = row[17]
+        if sha == '':
+            sha = 0
         sh = row[18]
         if sh == '':
             sh = 0
@@ -130,11 +144,11 @@ with open("stats.csv", 'r') as infile:
         outfile.write('"gwG": ' + str(gwg) + ', "evA": ' + str(eva) + ',\n')
         outfile.write('"ppA": ' + str(ppa) + ', "shA": ' + str(sha) + ',\n')
         outfile.write('"gpGoalie":0,"gMin":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,"ga":0,"sv":0,"gW":0,"gL":0,"gT":0,"gOTL":0,"so":0,"gs":0,"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,')
-        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": 23},\n')
+        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "27"},\n')
 
 outfile.write('],\n"ratings":[')
 for x in range(len(seasons)):
-    outfile.write('{"season": ' + str(seasons[x]) + ', "pos": "' + pos + '",\n')
+    outfile.write('{"season": ' + str(seasons[x]) + ', "pos": "' + poslist[x] + '",\n')
     outfile.write('"hgt": 50,\n"stre": 50,\n')
     outfile.write('"spd": 50,\n"endu": 50,\n')
     outfile.write('"pss": 50,\n"wst": 50,\n"sst": 50,\n')
@@ -159,9 +173,17 @@ with open("statsPO.csv", 'r') as infile:
             pm = 0
         pim = row[10]
         evg = row[11]
+        if evg == '':
+            evg = row[6]
         ppg = row[12]
+        if ppg == '':
+            ppg = 0
         shg = row[13]
+        if shg == '':
+            shg = 0
         gwg = row[14]
+        if gwg == '':
+            gwg = 0
         eva = row[15]
         if eva == '':
             eva = row[7]
@@ -185,7 +207,7 @@ with open("statsPO.csv", 'r') as infile:
         outfile.write('"ppG": ' + str(ppg) + ', "shG": ' + str(shg) + ',\n')
         outfile.write('"gwG": ' + str(gwg) + ', "evA": ' + str(eva) + ',\n')
         outfile.write('"ppA": ' + str(ppa) + ', "shA": ' + str(sha) + ',\n')
-        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": 23},\n')
+        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "27"},\n')
 infile.close()
 outfile.close()
 

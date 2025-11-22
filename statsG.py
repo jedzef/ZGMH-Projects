@@ -132,7 +132,7 @@ with open("statsG.csv", 'r') as infile:
         outfile.write('"gpSkater":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,\n')
         outfile.write('"gW":' + str(gw) + ',"gL":' + str(gL) + ',"gT":' + str(gT) + ',"gOTL":' + str(gOTL) + ',\n')
         outfile.write('"so":' + str(so) + ',"gs":0,"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,\n')
-        outfile.write('"s": 0, "jerseyNumber": 1},\n')
+        outfile.write('"s": 0, "jerseyNumber": "1"},\n')
 
 outfile.write('],\n"ratings":[')
 for x in range(len(seasons)):
@@ -212,7 +212,7 @@ with open("statsPOG.csv", 'r') as infile:
         outfile.write('"gpSkater":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,\n')
         outfile.write('"gW":' + str(gw) + ',"gL":' + str(gL) + ',"gT":' + str(gT) + ',"gOTL":' + str(gOTL) + ',\n')
         outfile.write('"so":' + str(so) + ',"gs":0,"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,\n')
-        outfile.write('"s": 0, "jerseyNumber": 1},\n')
+        outfile.write('"s": 0, "jerseyNumber": "1"},\n')
 infile.close()
 outfile.close()
 
