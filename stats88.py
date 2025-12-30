@@ -39,7 +39,7 @@ teamnum = {
     "NYI": 21,
     "CLR": 22,
     "NJD": 22,
-    "WAS": 23,
+    "WSH": 23,
     "EDM": 24,
     "HAR": 25,
     "CAR": 25,
@@ -75,16 +75,7 @@ with open("stats.csv", 'r') as infile:
         yrs = sea.split('-')
         season = str(int(yrs[0])+1)
         seasons = seasons + [season]
-        if row[2] == '2TM':
-            next(reader)
-        else:
-            if row[2] == '3TM':
-                next(reader)
-            else:
-                if row[2] == '4TM':
-                    next(reader)
-                else:
-                    tid = teamnum[row[2]]
+        tid = teamnum[row[2]]
         tidlist = [tid]
         if statstids == []:
             statstids = statstids + tidlist
@@ -123,7 +114,7 @@ with open("stats.csv", 'r') as infile:
         sh = row[18]
         if sh == '':
             sh = 0
-        toi = row[30]
+        toi = row[29]
         if toi != '':
             time = toi.split(':')
             min = str(int(time[0])+1)
@@ -135,22 +126,22 @@ with open("stats.csv", 'r') as infile:
         tsa = row[20]
         if tsa == '':
             tsa = 0
-        fow = row[32]
+        fow = row[31]
         if fow == '':
             fow = 0
-        fol = row[33]
+        fol = row[32]
         if fol == '':
             fol = 0
-        blk = row[35]
+        blk = row[34]
         if blk =='':
             blk = 0
-        hit = row[36]
+        hit = row[35]
         if hit =='':
             hit = 0        
-        tk = row[37]
+        tk = row[36]
         if tk =='':
             tk = 0
-        gv = row[38]
+        gv = row[37]
         if gv =='':
             gv = 0
 # outfile
@@ -163,9 +154,9 @@ with open("stats.csv", 'r') as infile:
         outfile.write('"ppG": ' + str(ppg) + ', "shG": ' + str(shg) + ',\n')
         outfile.write('"gwG": ' + str(gwg) + ', "evA": ' + str(eva) + ',\n')
         outfile.write('"ppA": ' + str(ppa) + ', "shA": ' + str(sha) + ',\n')
-        outfile.write('"gpGoalie":0,"gMin":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,"ga":0,"sv":0,"gW":0,"gL":0,"gT":0,"gOTL":0,"so":0,"gs":0,"ppMin":0,"shMin":0,\n')
+        outfile.write('"gpGoalie":0,"gMin":0,"minAvailable":0,"shft":0,"gwA":0,"ga":0,"sv":0,"gW":0,"gL":0,"gT":0,"gOTL":0,"so":0,"gs":0,"ppMin":0,"shMin":0,\n')
         outfile.write('"fow":'+str(fow)+',"fol":'+str(fol)+',"blk":'+str(blk)+',"hit":'+str(hit)+',"tk":'+str(tk)+',"gv":'+str(gv)+',"tsa":'+str(tsa)+',\n')
-        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "13"},\n')
+        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "12"},\n')
 
 outfile.write('],\n"ratings":[')
 for x in range(len(seasons)):
@@ -205,35 +196,43 @@ with open("statsPO.csv", 'r') as infile:
         gwg = row[14]
         if gwg == '':
             gwg = 0
-        eva = row[7]
-        sh = row[15]
+        eva = row[15]
+        if eva =='':
+            eva = row[7]
+        ppa = row[16]
+        if ppa == '':
+            ppa = 0
+        sha = row[17]
+        if sha == '':
+            sha = 0
+        sh = row[18]
         if sh == '':
             sh = 0
-        toi = row[18]
+        toi = row[21]
         if toi != '':
             time = toi.split(':')
             min = str(int(time[0])+1)
         else:
             min = '1'
-        tsa = row[17]
+        tsa = row[20]
         if tsa == '':
             tsa = 0
-        fow = row[20]
+        fow = row[23]
         if fow == '':
             fow = 0
-        fol = row[21]
+        fol = row[24]
         if fol == '':
             fol = 0
-        blk = row[23]
+        blk = row[26]
         if blk =='':
             blk = 0
-        hit = row[24]
+        hit = row[27]
         if hit =='':
             hit = 0        
-        tk = row[25]
+        tk = row[28]
         if tk =='':
             tk = 0
-        gv = row[26]
+        gv = row[29]
         if gv =='':
             gv = 0
 
@@ -247,7 +246,7 @@ with open("statsPO.csv", 'r') as infile:
         outfile.write('"gwG": ' + str(gwg) + ', "evA": ' + str(eva) + ',\n')
         outfile.write('"ppA": ' + str(ppa) + ', "shA": ' + str(sha) + ',\n')
         outfile.write('"fow":'+str(fow)+',"fol":'+str(fol)+',"blk":'+str(blk)+',"hit":'+str(hit)+',"tk":'+str(tk)+',"gv":'+str(gv)+',"tsa":'+str(tsa)+',\n')
-        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "13"},\n')
+        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "12"},\n')
 infile.close()
 outfile.close()
 

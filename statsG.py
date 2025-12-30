@@ -38,7 +38,7 @@ teamnum = {
     "NYI": 21,
     "CLR": 22,
     "NJD": 22,
-    "WAS": 23,
+    "WSH": 23,
     "EDM": 24,
     "HAR": 25,
     "CAR": 25,
@@ -64,7 +64,7 @@ teamnum = {
 }
 ywt = 1
 outfile = open("stats.txt", 'w')
-with open("statsG.csv", 'r') as infile:
+with open("stats.csv", 'r') as infile:
     reader = csv.reader(infile)
     header = next(reader)
     outfile.write('"stats":[\n')
@@ -74,16 +74,7 @@ with open("statsG.csv", 'r') as infile:
         season = str(int(yrs[0])+1)
         seasonlist = [season]
         seasons = seasons + seasonlist
-        if row[2] == '2TM':
-            next(reader)
-        else:
-            if row[2] == '3TM':
-                next(reader)
-            else:
-                if row[2] == '4TM':
-                    next(reader)
-                else:
-                    tid = teamnum[row[2]]
+        tid = teamnum[row[2]]
         tidlist = [tid]
         if statstids == []:
             statstids = statstids + tidlist
@@ -132,7 +123,7 @@ with open("statsG.csv", 'r') as infile:
         outfile.write('"gpSkater":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,\n')
         outfile.write('"gW":' + str(gw) + ',"gL":' + str(gL) + ',"gT":' + str(gT) + ',"gOTL":' + str(gOTL) + ',\n')
         outfile.write('"so":' + str(so) + ',"gs":0,"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,\n')
-        outfile.write('"s": 0, "jerseyNumber": "1"},\n')
+        outfile.write('"s": 0, "jerseyNumber": "30"},\n')
 
 outfile.write('],\n"ratings":[')
 for x in range(len(seasons)):
@@ -146,7 +137,7 @@ for x in range(len(seasons)):
 outfile.write('],\n"statsTids":' + str(statstids) + ', "hof": 1,\n')
 outfile.write('"tid": -3, "retiredYear":' + season + ', "pos": "G",\n')
 infile.close()
-with open("statsPOG.csv", 'r') as infile:
+with open("statsPO.csv", 'r') as infile:
     reader = csv.reader(infile)
     header = next(reader)
     for row in reader:
@@ -155,16 +146,7 @@ with open("statsPOG.csv", 'r') as infile:
         season = str(int(yrs[0])+1)
         seasonlist = [season]
         seasons = seasons + seasonlist
-        if row[2] == '2TM':
-            next(reader)
-        else:
-            if row[2] == '3TM':
-                next(reader)
-            else:
-                if row[2] == '4TM':
-                    next(reader)
-                else:
-                    tid = teamnum[row[2]]
+        tid = teamnum[row[2]]
         tidlist = [tid]
         if statstids == []:
             statstids = statstids + tidlist
@@ -201,7 +183,7 @@ with open("statsPOG.csv", 'r') as infile:
 
 # outfile
         outfile.write('{"playoffs": true, "season": ' + season + ',\n')
-        outfile.write('"tid": ' + str(tid) + ', "yearsWithTeam":' + str(ywt) + ', "gc":0,\n')
+        outfile.write('"tid": ' + str(tid) + ', "gc":0,\n')
         outfile.write('"ops": 0, "dps": 0, "gps": 0,\n')
         outfile.write('"gp": ' + str(gp) + ', "gpGoalie": ' + str(gp) + ',\n')
         outfile.write('"min": ' + str(min) + ', "pm": 0,\n')
@@ -212,7 +194,7 @@ with open("statsPOG.csv", 'r') as infile:
         outfile.write('"gpSkater":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,\n')
         outfile.write('"gW":' + str(gw) + ',"gL":' + str(gL) + ',"gT":' + str(gT) + ',"gOTL":' + str(gOTL) + ',\n')
         outfile.write('"so":' + str(so) + ',"gs":0,"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,\n')
-        outfile.write('"s": 0, "jerseyNumber": "1"},\n')
+        outfile.write('"s": 0, "jerseyNumber": "30"},\n')
 infile.close()
 outfile.close()
 

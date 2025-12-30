@@ -39,7 +39,7 @@ teamnum = {
     "NYI": 21,
     "CLR": 22,
     "NJD": 22,
-    "WAS": 23,
+    "WSH": 23,
     "EDM": 24,
     "HAR": 25,
     "CAR": 25,
@@ -75,16 +75,7 @@ with open("stats.csv", 'r') as infile:
         yrs = sea.split('-')
         season = str(int(yrs[0])+1)
         seasons = seasons + [season]
-        if row[2] == '2TM':
-            next(reader)
-        else:
-            if row[2] == '3TM':
-                next(reader)
-            else:
-                if row[2] == '4TM':
-                    next(reader)
-                else:
-                    tid = teamnum[row[2]]
+        tid = teamnum[row[2]]
         tidlist = [tid]
         if statstids == []:
             statstids = statstids + tidlist
@@ -144,7 +135,7 @@ with open("stats.csv", 'r') as infile:
         outfile.write('"gwG": ' + str(gwg) + ', "evA": ' + str(eva) + ',\n')
         outfile.write('"ppA": ' + str(ppa) + ', "shA": ' + str(sha) + ',\n')
         outfile.write('"gpGoalie":0,"gMin":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,"ga":0,"sv":0,"gW":0,"gL":0,"gT":0,"gOTL":0,"so":0,"gs":0,"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,')
-        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "27"},\n')
+        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "9"},\n')
 
 outfile.write('],\n"ratings":[')
 for x in range(len(seasons)):
@@ -196,7 +187,12 @@ with open("statsPO.csv", 'r') as infile:
         sh = row[18]
         if sh == '':
             sh = 0
-        min = 1
+        toi = row[20]
+        if toi != '':
+            time = toi.split(':')
+            min = str(int(time[0])+1)
+        else:
+            min = '1'
 
 # outfile
         outfile.write('{"playoffs": true, "season": ' + season + ',\n')
@@ -207,7 +203,7 @@ with open("statsPO.csv", 'r') as infile:
         outfile.write('"ppG": ' + str(ppg) + ', "shG": ' + str(shg) + ',\n')
         outfile.write('"gwG": ' + str(gwg) + ', "evA": ' + str(eva) + ',\n')
         outfile.write('"ppA": ' + str(ppa) + ', "shA": ' + str(sha) + ',\n')
-        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "27"},\n')
+        outfile.write('"s": ' + str(sh) + ', "jerseyNumber": "9"},\n')
 infile.close()
 outfile.close()
 
