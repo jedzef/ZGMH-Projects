@@ -163,9 +163,9 @@ for url in skater_links:
     key_cols = trimmedst.columns[:5].tolist()
     
     # Merge all three together
-    combined = trimmedst.merge(trimmedmi, on=key_cols, how="outer",suffixes=('','_misc'))
+    combined = trimmedst.merge(trimmedmi, on=key_cols, how="left",suffixes=('','_misc'))
     if not (trimmedpo.iloc[:, 0] == '').all():
-        combined = combined.merge(trimmedpo, on=key_cols, how="outer")
+        combined = combined.merge(trimmedpo, on=key_cols, how="left")
     else:
         combined = pd.concat([combined, trimmedpo], axis=1)
 
@@ -303,7 +303,11 @@ for url in skater_links:
                 outfile.write('"fow":'+str(fowp)+',"fol":'+str(folp)+',"blk":'+str(blkp)+',"hit":'+str(hitp)+',"tk":'+str(tkp)+',"gv":'+str(gvp)+',"tsa":'+str(tsap)+',\n')
                 outfile.write('"s": ' + str(shp) + ', "jerseyNumber": "qq"},\n')
     outfile.write('],\n"ratings":[')
+    seen_seasons = set()
     for x in range(len(seasons)):
+        if seasons[x] in seen_seasons:
+            continue
+        seen_seasons.add(seasons[x])
         outfile.write('{"season": ' + str(seasons[x]) + ', "pos": "' + poslist[x] + '",\n')
         outfile.write('"hgt": 50,\n"stre": 50,\n')
         outfile.write('"spd": 50,\n"endu": 50,\n')
@@ -359,7 +363,7 @@ for url in goalie_links:
     key_cols = trimmedst.columns[:5].tolist()
 
     if not (trimmedpo.iloc[:, 0] == '').all():
-        combined = trimmedst.merge(trimmedpo, on=key_cols, how="outer")
+        combined = trimmedst.merge(trimmedpo, on=key_cols, how="left")
     else:
         combined = pd.concat([trimmedst, trimmedpo], axis=1)
 
@@ -467,7 +471,11 @@ for url in goalie_links:
                 outfile.write('"so":' + str(sop) + ',"gs":' + str(gsp) + ',"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,\n')
                 outfile.write('"s": 0, "jerseyNumber": "qq"},\n')
     outfile.write('],\n"ratings":[')
+    seen_seasons = set()
     for x in range(len(seasons)):
+        if seasons[x] in seen_seasons:
+            continue
+        seen_seasons.add(seasons[x])
         outfile.write('{"season": ' + str(seasons[x]) + ', "pos": "G",\n')
         outfile.write('"hgt": 50,\n"stre": 50,\n')
         outfile.write('"spd": 10,\n"endu": 50,\n')
