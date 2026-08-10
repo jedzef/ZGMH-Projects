@@ -127,7 +127,7 @@ session.headers.update({
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept-Language": "en-US,en;q=0.9",
 })
-outfile = open("stats.txt", 'w')
+outfile = open("stats.txt", 'w', encoding="utf-8")
 
 for url in skater_links:
     response = session.get(url)
@@ -179,7 +179,7 @@ for url in skater_links:
     # Save to CSV
     combined.to_csv("stats.csv", index=False)
     
-    with open("stats.csv", 'r') as infile:
+    with open("stats.csv", 'r', encoding="utf-8") as infile:
         reader = csv.reader(infile)
         header = next(reader)
         outfile.write(name + '\n')
@@ -331,7 +331,7 @@ time.sleep(3)
 seasons = []
 statstids = []
 ywt = 1
-outfile = open("statsG.txt", 'w')
+outfile = open("statsG.txt", 'w', encoding="utf-8")
 
 for url in goalie_links:
     response = session.get(url)
@@ -370,7 +370,7 @@ for url in goalie_links:
     # Save to CSV
     combined.to_csv("stats.csv", index=False)
 
-    with open("stats.csv", 'r') as infile:
+    with open("stats.csv", 'r', encoding="utf-8") as infile:
         reader = csv.reader(infile)
         header = next(reader)
         outfile.write(name+'\n')
@@ -494,3 +494,95 @@ for url in goalie_links:
     
 outfile.close()
 print("Goalies Complete! statsG.txt")
+
+
+
+print("Replacing stats in roster file...")
+
+JSON_FILE = "NHL_26-27.json"
+TXT_FILE = "stats.txt"
+OUTPUT_FILE = "NHL_26-27_updated.json"
+
+
+with open(TXT_FILE, "r", encoding="utf-8") as f:
+    txt = f.read()
+
+with open(JSON_FILE, "r", encoding="utf-8") as f:
+    db = json.load(f)
+
+
+# Extract player blocks from stats.txt
+name_pattern = re.compile(
+    r"^([A-Z][A-Za-z\.\'\-]+(?:\s+[A-Z][A-Za-z\.\'\-]+)+)\s*$",
+    re.MULTILINE
+)
+
+matches = list(name_pattern.finditer(txt))
+
+players_from_txt = {}
+
+for i, match in enumerate(matches):
+    name = match.group(1).strip()
+
+    start = match.end()
+    end = matches[i + 1].start() if i + 1 < len(matches) else len(txt)
+
+    block = txt[start:end]
+
+    # Extract stats
+    stats_match = re.search(
+        r'"stats":\s*\[(.*?)\]\s*,\s*"ratings":',
+        block,
+        re.DOTALL
+    )
+
+    # Extract ratings
+    ratings_match = re.search(
+        r'"ratings":\s*\[(.*?)\]\s*,\s*"statsTids":',
+        block,
+        re.DOTALL
+    )
+
+    # Extract statsTids
+    tids_match = re.search(
+        r'"statsTids":\s*(\[[^\]]*\])',
+        block,
+        re.DOTALL
+    )
+
+    try:
+        stats = json.loads("[" + stats_match.group(1) + "]") if stats_match else []
+        ratings = json.loads("[" + ratings_match.group(1) + "]") if ratings_match else []
+        stats_tids = json.loads(tids_match.group(1)) if tids_match else []
+
+        players_from_txt[name] = {
+            "stats": stats,
+            "ratings": ratings,
+            "statsTids": stats_tids,
+        }
+
+    except Exception as e:
+        print(f"Failed parsing {name}: {e}")
+
+
+# Replace fields in NHL json
+updated = 0
+
+for player in db["players"]:
+    full_name = f"{player.get('firstName','')} {player.get('lastName','')}".strip()
+
+    if full_name in players_from_txt:
+        player["stats"] = players_from_txt[full_name]["stats"]
+        player["ratings"] = players_from_txt[full_name]["ratings"]
+        player["statsTids"] = players_from_txt[full_name]["statsTids"]
+
+        updated += 1
+        print(f"Updated: {full_name}")
+
+print(f"\nUpdated {updated} players")
+
+
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    json.dump(db, f, ensure_ascii=False)
+
+print(f"Saved: {OUTPUT_FILE}")
