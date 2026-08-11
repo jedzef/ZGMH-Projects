@@ -1,3 +1,4 @@
+import copy
 import time
 import csv
 import json
@@ -324,14 +325,12 @@ for url in skater_links:
 
     time.sleep(random.uniform(2,5))
     
-outfile.close()
-print("Skaters Complete! stats.txt")
+print("Skaters Complete!")
 time.sleep(3)
 
 seasons = []
 statstids = []
 ywt = 1
-outfile = open("statsG.txt", 'w', encoding="utf-8")
 
 for url in goalie_links:
     response = session.get(url)
@@ -493,15 +492,16 @@ for url in goalie_links:
     time.sleep(random.uniform(2,5))
     
 outfile.close()
-print("Goalies Complete! statsG.txt")
+print("Goalies Complete!")
+
 
 
 
 print("Replacing stats in roster file...")
 
-JSON_FILE = "NHL_26-27.json"
+JSON_FILE = "ZGMH_NHL_25_26_2026_TDL.json"
 TXT_FILE = "stats.txt"
-OUTPUT_FILE = "NHL_26-27_updated.json"
+OUTPUT_FILE = "NHL_26-27_v0.9.json"
 
 
 with open(TXT_FILE, "r", encoding="utf-8") as f:
@@ -567,13 +567,27 @@ for i, match in enumerate(matches):
 
 # Replace fields in NHL json
 updated = 0
+rating_2026 = None
 
 for player in db["players"]:
     full_name = f"{player.get('firstName','')} {player.get('lastName','')}".strip()
 
     if full_name in players_from_txt:
         player["stats"] = players_from_txt[full_name]["stats"]
-        player["ratings"] = players_from_txt[full_name]["ratings"]
+        existing_ratings = player.get("ratings", [])
+        txt_ratings = [
+            rating
+            for rating in players_from_txt[full_name]["ratings"]
+            if rating["season"] != 2026
+        ]
+        player["ratings"] = txt_ratings + existing_ratings
+        new_ratings = player["ratings"]
+        for rating in new_ratings:
+            if rating["season"] == 2026:
+                rating_2027 = copy.deepcopy(rating)
+                rating_2027["season"] = 2027
+                player["ratings"].append(rating_2027)
+                break
         player["statsTids"] = players_from_txt[full_name]["statsTids"]
 
         updated += 1
