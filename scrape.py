@@ -58,7 +58,7 @@ time.sleep(5)
 
 print("Grabbing stats. To avoid getting kicked by Sports Reference, each player page is accessed 2-5s apart. Please be patient...")
 
-post = {'C':'C', 'LW':'W', 'RW':'W', 'D':'D', 'G':'G', 'F':'W'}
+post = {'C':'C', 'LW':'W', 'RW':'W', 'D':'D', 'G':'G', 'F':'W', 'W':'W'}
 seasons = []
 statstids = []
 glk = random.randint(0,10)
@@ -568,6 +568,7 @@ for i, match in enumerate(matches):
 # Replace fields in NHL json
 updated = 0
 rating_2026 = None
+matched_names = set()
 
 for player in db["players"]:
     full_name = f"{player.get('firstName','')} {player.get('lastName','')}".strip()
@@ -591,6 +592,7 @@ for player in db["players"]:
         player["statsTids"] = players_from_txt[full_name]["statsTids"]
 
         updated += 1
+        matched_names.add(full_name)
         print(f"Updated: {full_name}")
 
 print(f"\nUpdated {updated} players")
@@ -600,3 +602,13 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     json.dump(db, f, ensure_ascii=False)
 
 print(f"Saved: {OUTPUT_FILE}")
+
+# Report players found in stats.txt but not present in the JSON roster file
+not_found = sorted(set(players_from_txt.keys()) - matched_names)
+
+if not_found:
+    print(f"\n{len(not_found)} player(s) from {TXT_FILE} were not found in {JSON_FILE}:")
+    for name in not_found:
+        print(f"  - {name}")
+else:
+    print(f"\nAll players from {TXT_FILE} were found in {JSON_FILE}.")
