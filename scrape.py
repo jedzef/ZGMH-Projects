@@ -20,7 +20,7 @@ season_url = "https://www.hockey-reference.com/leagues/NHL_2026_skaters.html"
 response = session.get(season_url)
 
 # Check if you got through
-print(response.status_code)
+print("u/jedzef's NHL stats scraper for ZenGM Hockey roster files!")
 if response.status_code == 429:
     print("Rate limited, waiting...")
     time.sleep(60)  # wait a full minute before retrying
@@ -171,9 +171,15 @@ for url in skater_links:
         combined = pd.concat([combined, trimmedpo], axis=1)
 
     fox = combined.columns[25]
-    foy = combined.columns[72]
     if fox[1] != ('FO%'):
         combined.insert(25,"FO%_x",None)
+    sopct = combined.columns[47]
+    if sopct[1] != ('Pct'):
+        combined.insert(47,"Pct",None)
+    popct = combined.columns[66]
+    if popct[1] != ('SPCT'):
+        combined.insert(66,"SPCT",None)
+    foy = combined.columns[72]
     if foy[1] != ('FO%'):
         combined.insert(72,"FO%_y",None)
     
