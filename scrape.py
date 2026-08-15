@@ -18,6 +18,7 @@ session.headers.update({
 
 season_url = "https://www.hockey-reference.com/leagues/NHL_2026_skaters.html"
 response = session.get(season_url)
+response.encoding = "utf-8"
 
 # Check if you got through
 print("u/jedzef's NHL stats scraper for ZenGM Hockey roster files!")
@@ -25,6 +26,7 @@ if response.status_code == 429:
     print("Rate limited, waiting...")
     time.sleep(60)  # wait a full minute before retrying
     response = session.get(season_url)
+    response.encoding = "utf-8"
 
 html = response.text
 html = html.replace("<!--", "").replace("-->", "")
@@ -128,17 +130,79 @@ session.headers.update({
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept-Language": "en-US,en;q=0.9",
 })
-outfile = open("stats.txt", 'w', encoding="utf-8")
+
+
+def get_jersey_ranges(soup):
+    """Parse the uniform-number icons at the top of a hockey-reference player
+    page into a list of (start_year, end_year, jersey_number) tuples, e.g.
+    (2013, 2018, '10') for a number worn from the 2013-14 through 2017-18
+    seasons."""
+    ranges = []
+    holder = soup.find("div", class_="uni_holder")
+    if not holder:
+        return ranges
+    for a in holder.find_all("a", class_="poptip"):
+        tip = a.get("data-tip", "")
+        if "," not in tip:
+            continue
+        years_part = tip.rsplit(",", 1)[-1].strip()
+        m = re.match(r"(\d{4})-(\d{4})", years_part)
+        if not m:
+            continue
+        start, end = int(m.group(1)), int(m.group(2))
+        num_match = re.search(r"number=(\d+)", a.get("href", ""))
+        if not num_match:
+            continue
+        ranges.append((start, end, num_match.group(1)))
+    return ranges
+
+
+def jersey_for_season(ranges, season, playoffs=False):
+    """season is the ending year of a season, e.g. 2013 for '2012-13'.
+    A jersey range (start, end) covers seasons where start < season <= end.
+    When a player wore more than one number in the same season (a mid-season
+    change), the earliest-listed number is used for the playoff stat line
+    and the latest-listed number is used for the regular-season stat line."""
+    candidates = [number for start, end, number in ranges if start < season <= end]
+    if not candidates:
+        return "qq"
+    return candidates[0] if playoffs else candidates[-1]
+
+
+def num(x):
+    """Turn a CSV string value into a real JSON-friendly number.
+    Mirrors what would happen if the old code's unquoted str(x) had been
+    parsed back out of text, but without blowing up on '' or on the
+    occasional non-numeric value."""
+    if isinstance(x, (int, float, list, dict)):
+        return x
+    if x is None or x == '':
+        return 0
+    try:
+        return int(x)
+    except (ValueError, TypeError):
+        try:
+            return float(x)
+        except (ValueError, TypeError):
+            return x
+
+
+# Every player's {"stats": [...], "ratings": [...], "statsTids": [...]}
+# gets collected here, keyed by full player name, instead of being written
+# out as hand-formatted text.
+players_data = {}
 
 for url in skater_links:
     response = session.get(url)
+    response.encoding = "utf-8"
     soup = BeautifulSoup(response.text, "html.parser")
     script = soup.find("script", {"type": "application/ld+json"})
     data = json.loads(script.string)
     if isinstance(data, list):
         data = data[0]
     name = data["name"]
-    
+    jersey_ranges = get_jersey_ranges(soup)
+
     # Find tables by ID using BeautifulSoup
     standard_table = soup.find("table", {"id": "player_stats"})
     playoff_table = soup.find("table", {"id": "player_stats_post"})
@@ -162,7 +226,7 @@ for url in skater_links:
 
     # Get the first 5 column names
     key_cols = trimmedst.columns[:5].tolist()
-    
+
     # Merge all three together
     combined = trimmedst.merge(trimmedmi, on=key_cols, how="left",suffixes=('','_misc'))
     if not (trimmedpo.iloc[:, 0] == '').all():
@@ -182,15 +246,14 @@ for url in skater_links:
     foy = combined.columns[72]
     if foy[1] != ('FO%'):
         combined.insert(72,"FO%_y",None)
-    
+
     # Save to CSV
     combined.to_csv("stats.csv", index=False)
-    
+
+    stats_entries = []
     with open("stats.csv", 'r', encoding="utf-8") as infile:
         reader = csv.reader(infile)
         header = next(reader)
-        outfile.write(name + '\n')
-        outfile.write('"stats":[\n')
         for row in reader:
             if row[2] in skip:
                 continue
@@ -198,7 +261,7 @@ for url in skater_links:
                 continue
             sea = row[0]
             yrs = sea.split('-')
-            season = str(int(yrs[0])+1)
+            season = int(yrs[0]) + 1
             seasons = seasons + [season]
             tid = teamnum[row[2]]
             tidlist = [tid]
@@ -232,7 +295,7 @@ for url in skater_links:
                 times = tois.split(':')
                 mins = int(times[0])+1
             else:
-                mins = '1'
+                mins = 1
             fows = row[23]
             if fows == '':
                 fows = 0
@@ -240,14 +303,14 @@ for url in skater_links:
             if fols == '':
                 fols = 0
             blks = row[26]
-            hits = row[27]      
+            hits = row[27]
             tks = row[28]
             gvs = row[29]
-                
+
             gc = row[35]
             ops = row[41]
             dps = row[42]
-            
+
             gpp = row[52]
             pmp = row[56]
             pimp = row[57]
@@ -273,7 +336,7 @@ for url in skater_links:
                 timep = toip.split(':')
                 minp = int(timep[0])+1
             else:
-                minp = '1'
+                minp = 1
             fowp = row[70]
             if fowp == '':
                 fowp = 0
@@ -281,56 +344,71 @@ for url in skater_links:
             if folp == '':
                 folp = 0
             blkp = row[73]
-            hitp = row[74]     
+            hitp = row[74]
             tkp = row[75]
             gvp = row[76]
-                
+
             if gps != '':
-                outfile.write('{"playoffs": false, "season": ' + season + ',\n')
-                outfile.write('"tid": ' + str(tid) + ', "yearsWithTeam":' + str(ywt) + ', "gc": ' + str(gc) + ',\n')
-                outfile.write('"ops": ' + str(ops) + ', "dps": ' + str(dps) + ', "gps": 0,\n')
-                outfile.write('"gp": ' + str(gps) + ', "gpSkater": ' + str(gps) + ',\n')
-                outfile.write('"min": ' + str(mins) + ', "pm": ' + str(pms) + ',\n')
-                outfile.write('"pim": ' + str(pims) + ', "evG": ' + str(evgs) + ',\n')
-                outfile.write('"ppG": ' + str(ppgs) + ', "shG": ' + str(shgs) + ',\n')
-                outfile.write('"gwG": ' + str(gwgs) + ', "evA": ' + str(evas) + ',\n')
-                outfile.write('"ppA": ' + str(ppas) + ', "shA": ' + str(shas) + ',\n')
-                outfile.write('"gpGoalie":0,"gMin":0,"minAvailable":0,"shft":0,"gwA":0,"ga":0,"sv":0,"gW":0,"gL":0,"gT":0,"gOTL":0,"so":0,"gs":0,"ppMin":0,"shMin":0,\n')
-                outfile.write('"fow":'+str(fows)+',"fol":'+str(fols)+',"blk":'+str(blks)+',"hit":'+str(hits)+',\n"tk":'+str(tks)+',"gv":'+str(gvs)+',"tsa":'+str(tsas)+',"s": ' + str(shs) + ',\n')
-                outfile.write('"jerseyNumber": "qq"},\n')
+                stats_entries.append({
+                    "playoffs": False, "season": season,
+                    "tid": tid, "yearsWithTeam": ywt, "gc": num(gc),
+                    "ops": num(ops), "dps": num(dps), "gps": 0,
+                    "gp": num(gps), "gpSkater": num(gps),
+                    "min": mins, "pm": num(pms),
+                    "pim": num(pims), "evG": num(evgs),
+                    "ppG": num(ppgs), "shG": num(shgs),
+                    "gwG": num(gwgs), "evA": num(evas),
+                    "ppA": num(ppas), "shA": num(shas),
+                    "gpGoalie": 0, "gMin": 0, "minAvailable": 0, "shft": 0, "gwA": 0,
+                    "ga": 0, "sv": 0, "gW": 0, "gL": 0, "gT": 0, "gOTL": 0, "so": 0,
+                    "gs": 0, "ppMin": 0, "shMin": 0,
+                    "fow": num(fows), "fol": num(fols), "blk": num(blks), "hit": num(hits),
+                    "tk": num(tks), "gv": num(gvs), "tsa": num(tsas), "s": num(shs),
+                    "jerseyNumber": jersey_for_season(jersey_ranges, season),
+                })
             if gpp != '':
-                outfile.write('{"playoffs": true, "season": ' + season + ',\n')
-                outfile.write('"tid": ' + str(tid) + ',\n')
-                outfile.write('"gp": ' + str(gpp) + ', "gpSkater": ' + str(gpp) + ',\n')
-                outfile.write('"min": ' + str(minp) + ', "pm": ' + str(pmp) + ',\n')
-                outfile.write('"pim": ' + str(pimp) + ', "evG": ' + str(evgp) + ',\n')
-                outfile.write('"ppG": ' + str(ppgp) + ', "shG": ' + str(shgp) + ',\n')
-                outfile.write('"gwG": ' + str(gwgp) + ', "evA": ' + str(evap) + ',\n')
-                outfile.write('"ppA": ' + str(ppap) + ', "shA": ' + str(shap) + ',\n')
-                outfile.write('"fow":'+str(fowp)+',"fol":'+str(folp)+',"blk":'+str(blkp)+',"hit":'+str(hitp)+',"tk":'+str(tkp)+',"gv":'+str(gvp)+',"tsa":'+str(tsap)+',\n')
-                outfile.write('"s": ' + str(shp) + ', "jerseyNumber": "qq"},\n')
-    outfile.write('],\n"ratings":[')
+                stats_entries.append({
+                    "playoffs": True, "season": season,
+                    "tid": tid,
+                    "gp": num(gpp), "gpSkater": num(gpp),
+                    "min": minp, "pm": num(pmp),
+                    "pim": num(pimp), "evG": num(evgp),
+                    "ppG": num(ppgp), "shG": num(shgp),
+                    "gwG": num(gwgp), "evA": num(evap),
+                    "ppA": num(ppap), "shA": num(shap),
+                    "fow": num(fowp), "fol": num(folp), "blk": num(blkp), "hit": num(hitp),
+                    "tk": num(tkp), "gv": num(gvp), "tsa": num(tsap),
+                    "s": num(shp), "jerseyNumber": jersey_for_season(jersey_ranges, season, playoffs=True),
+                })
+
+    ratings_entries = []
     seen_seasons = set()
     for x in range(len(seasons)):
         if seasons[x] in seen_seasons:
             continue
         seen_seasons.add(seasons[x])
-        outfile.write('{"season": ' + str(seasons[x]) + ', "pos": "' + poslist[x] + '",\n')
-        outfile.write('"hgt": 50,\n"stre": 50,\n')
-        outfile.write('"spd": 50,\n"endu": 50,\n')
-        outfile.write('"pss": 50,\n"wst": 50,\n"sst": 50,\n')
-        outfile.write('"stk": 50,\n"oiq": 50,\n"chk": 50,\n')
-        outfile.write('"blk": 50,\n"fcf": 50,\n"diq": 50,\n')
-        outfile.write('"glk": ' + str(glk) + '},\n')
-    outfile.write('],\n"statsTids":' + str(statstids) + ',\n\n')
-    infile.close()
-    
+        ratings_entries.append({
+            "season": seasons[x], "pos": poslist[x],
+            "hgt": 50, "stre": 50,
+            "spd": 50, "endu": 50,
+            "pss": 50, "wst": 50, "sst": 50,
+            "stk": 50, "oiq": 50, "chk": 50,
+            "blk": 50, "fcf": 50, "diq": 50,
+            "glk": glk,
+        })
+
+    players_data[name] = {
+        "stats": stats_entries,
+        "ratings": ratings_entries,
+        "statsTids": statstids,
+    }
+
     statstids = []
     seasons = []
     poslist = []
 
     time.sleep(random.uniform(2,5))
-    
+
 print("Skaters Complete!")
 time.sleep(3)
 
@@ -340,12 +418,14 @@ ywt = 1
 
 for url in goalie_links:
     response = session.get(url)
+    response.encoding = "utf-8"
     soup = BeautifulSoup(response.text, "html.parser")
     script = soup.find("script", {"type": "application/ld+json"})
     data = json.loads(script.string)
     if isinstance(data, list):
         data = data[0]
     name = data["name"]
+    jersey_ranges = get_jersey_ranges(soup)
 
     # Find tables by ID using BeautifulSoup
     standard_table = soup.find("table", {"id": "goalie_stats"})
@@ -375,11 +455,10 @@ for url in goalie_links:
     # Save to CSV
     combined.to_csv("stats.csv", index=False)
 
+    stats_entries = []
     with open("stats.csv", 'r', encoding="utf-8") as infile:
         reader = csv.reader(infile)
         header = next(reader)
-        outfile.write(name+'\n')
-        outfile.write('"stats":[\n')
         for row in reader:
             if row[2] in skip:
                 continue
@@ -387,7 +466,7 @@ for url in goalie_links:
                 continue
             sea = row[0]
             yrs = sea.split('-')
-            season = str(int(yrs[0])+1)
+            season = int(yrs[0]) + 1
             seasons = seasons + [season]
             tid = teamnum[row[2]]
             tidlist = [tid]
@@ -421,7 +500,7 @@ for url in goalie_links:
             if ass == '':
                 ass = 0
             pims = row[27]
-            
+
             gpp = row[29]
             gsp = row[30]
             if gsp == '':
@@ -433,12 +512,11 @@ for url in goalie_links:
             svp = row[36]
             sop = row[39]
             toip = row[40]
-            timep = toip.split(':')
             if toip != '':
                 timep = toip.split(':')
                 minp = int(timep[0])+1
             else:
-                minp = '1'
+                minp = 1
             gp = row[46]
             if gp == '':
                 gp = 0
@@ -448,143 +526,100 @@ for url in goalie_links:
             pimp = row[49]
 
             if gps != '':
-                outfile.write('{"playoffs": false, "season": ' + season + ',\n')
-                outfile.write('"tid": ' + str(tid) + ', "yearsWithTeam":' + str(ywt) + ', "gc": 0,\n')
-                outfile.write('"ops": 0, "dps": 0, "gps": ' + str(gpss) + ',\n')
-                outfile.write('"gp": ' + str(gps) + ', "gpGoalie": ' + str(gps) + ',\n')
-                outfile.write('"min": ' + str(mins) + ', "pm": 0,\n')
-                outfile.write('"pim": ' + str(pims) + ', "evG": ' + str(gs) + ',\n')
-                outfile.write('"ppG": 0, "shG": 0, "gwG": 0,\n')
-                outfile.write('"evA": ' + str(ass) + ',"ppA": 0, "shA": 0,\n')
-                outfile.write('"gMin": ' + str(mins) + ',"ga":' + str(gas) + ',"sv":' + str(svs) + ',\n')
-                outfile.write('"gpSkater":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,\n')
-                outfile.write('"gW":' + str(gWs) + ',"gL":' + str(gLs) + ',"gT":0,"gOTL":' + str(gOTLs) + ',\n')
-                outfile.write('"so":' + str(sos) + ',"gs":' + str(gss) + ',"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,\n')
-                outfile.write('"s": 0, "jerseyNumber": "qq"},\n')
+                stats_entries.append({
+                    "playoffs": False, "season": season,
+                    "tid": tid, "yearsWithTeam": ywt, "gc": 0,
+                    "ops": 0, "dps": 0, "gps": num(gpss),
+                    "gp": num(gps), "gpGoalie": num(gps),
+                    "min": mins, "pm": 0,
+                    "pim": num(pims), "evG": num(gs),
+                    "ppG": 0, "shG": 0, "gwG": 0,
+                    "evA": num(ass), "ppA": 0, "shA": 0,
+                    "gMin": mins, "ga": num(gas), "sv": num(svs),
+                    "gpSkater": 0, "minAvailable": 0, "shft": 0, "gwA": 0, "tsa": 0,
+                    "gW": num(gWs), "gL": num(gLs), "gT": 0, "gOTL": num(gOTLs),
+                    "so": num(sos), "gs": num(gss), "ppMin": 0, "shMin": 0,
+                    "fow": 0, "fol": 0, "blk": 0, "hit": 0, "tk": 0, "gv": 0,
+                    "s": 0, "jerseyNumber": jersey_for_season(jersey_ranges, season),
+                })
             if gpp != '':
-                outfile.write('{"playoffs": true, "season": ' + season + ',\n')
-                outfile.write('"tid": ' + str(tid) + ', "gc":0,\n')
-                outfile.write('"ops": 0, "dps": 0, "gps": 0,\n')
-                outfile.write('"gp": ' + str(gpp) + ', "gpGoalie": ' + str(gpp) + ',\n')
-                outfile.write('"min": ' + str(minp) + ', "pm": 0,\n')
-                outfile.write('"pim": ' + str(pimp) + ', "evG": ' + str(gp) + ',\n')
-                outfile.write('"ppG": 0, "shG": 0, "gwG": 0,\n')
-                outfile.write('"evA": ' + str(asp) + ',"ppA": 0, "shA": 0,\n')
-                outfile.write('"gMin": ' + str(minp) + ',"ga":' + str(gap) + ',"sv":' + str(svp) + ',\n')
-                outfile.write('"gpSkater":0,"minAvailable":0,"shft":0,"gwA":0,"tsa":0,\n')
-                outfile.write('"gW":' + str(gWp) + ',"gL":' + str(gLp) + ',"gT":0,"gOTL":' + str(gOTLp) + ',\n')
-                outfile.write('"so":' + str(sop) + ',"gs":' + str(gsp) + ',"ppMin":0,"shMin":0,"fow":0,"fol":0,"blk":0,"hit":0,"tk":0,"gv":0,\n')
-                outfile.write('"s": 0, "jerseyNumber": "qq"},\n')
-    outfile.write('],\n"ratings":[')
+                stats_entries.append({
+                    "playoffs": True, "season": season,
+                    "tid": tid, "gc": 0,
+                    "ops": 0, "dps": 0, "gps": 0,
+                    "gp": num(gpp), "gpGoalie": num(gpp),
+                    "min": minp, "pm": 0,
+                    "pim": num(pimp), "evG": num(gp),
+                    "ppG": 0, "shG": 0, "gwG": 0,
+                    "evA": num(asp), "ppA": 0, "shA": 0,
+                    "gMin": minp, "ga": num(gap), "sv": num(svp),
+                    "gpSkater": 0, "minAvailable": 0, "shft": 0, "gwA": 0, "tsa": 0,
+                    "gW": num(gWp), "gL": num(gLp), "gT": 0, "gOTL": num(gOTLp),
+                    "so": num(sop), "gs": num(gsp), "ppMin": 0, "shMin": 0,
+                    "fow": 0, "fol": 0, "blk": 0, "hit": 0, "tk": 0, "gv": 0,
+                    "s": 0, "jerseyNumber": jersey_for_season(jersey_ranges, season, playoffs=True),
+                })
+
+    ratings_entries = []
     seen_seasons = set()
     for x in range(len(seasons)):
         if seasons[x] in seen_seasons:
             continue
         seen_seasons.add(seasons[x])
-        outfile.write('{"season": ' + str(seasons[x]) + ', "pos": "G",\n')
-        outfile.write('"hgt": 50,\n"stre": 50,\n')
-        outfile.write('"spd": 10,\n"endu": 50,\n')
-        outfile.write('"pss": 10,\n"wst": 10,\n"sst": 0,\n')
-        outfile.write('"stk": 10,\n"oiq": 0,\n"chk": 10,\n')
-        outfile.write('"blk": 0,\n"fcf": 0,\n"diq": 10,\n')
-        outfile.write('"glk": 50},\n')
-    outfile.write('],\n"statsTids":' + str(statstids) + ',\n\n')
-    infile.close()
-        
+        ratings_entries.append({
+            "season": seasons[x], "pos": "G",
+            "hgt": 50, "stre": 50,
+            "spd": 10, "endu": 50,
+            "pss": 10, "wst": 10, "sst": 0,
+            "stk": 10, "oiq": 0, "chk": 10,
+            "blk": 0, "fcf": 0, "diq": 10,
+            "glk": 50,
+        })
+
+    players_data[name] = {
+        "stats": stats_entries,
+        "ratings": ratings_entries,
+        "statsTids": statstids,
+    }
+
     statstids = []
     seasons = []
     poslist = []
 
     time.sleep(random.uniform(2,5))
-    
-outfile.close()
+
 print("Goalies Complete!")
 
 
+# Write the scraped stats/ratings/statsTids straight to JSON -- no more
+# hand-formatted text file and no regex parsing needed to get it back out.
+STATS_JSON_FILE = "player_stats.json"
+with open(STATS_JSON_FILE, "w", encoding="utf-8") as f:
+    json.dump(players_data, f, ensure_ascii=False, indent=2)
+print(f"Saved scraped stats to: {STATS_JSON_FILE}")
 
 
 print("Replacing stats in roster file...")
 
 JSON_FILE = "ZGMH_NHL_25_26_2026_TDL.json"
-TXT_FILE = "stats.txt"
 OUTPUT_FILE = "NHL_26-27_v0.9.json"
-
-
-with open(TXT_FILE, "r", encoding="utf-8") as f:
-    txt = f.read()
 
 with open(JSON_FILE, "r", encoding="utf-8") as f:
     db = json.load(f)
 
-
-# Extract player blocks from stats.txt
-name_pattern = re.compile(
-    r"^([A-Z][A-Za-z\.\'\-]+(?:\s+[A-Z][A-Za-z\.\'\-]+)+)\s*$",
-    re.MULTILINE
-)
-
-matches = list(name_pattern.finditer(txt))
-
-players_from_txt = {}
-
-for i, match in enumerate(matches):
-    name = match.group(1).strip()
-
-    start = match.end()
-    end = matches[i + 1].start() if i + 1 < len(matches) else len(txt)
-
-    block = txt[start:end]
-
-    # Extract stats
-    stats_match = re.search(
-        r'"stats":\s*\[(.*?)\]\s*,\s*"ratings":',
-        block,
-        re.DOTALL
-    )
-
-    # Extract ratings
-    ratings_match = re.search(
-        r'"ratings":\s*\[(.*?)\]\s*,\s*"statsTids":',
-        block,
-        re.DOTALL
-    )
-
-    # Extract statsTids
-    tids_match = re.search(
-        r'"statsTids":\s*(\[[^\]]*\])',
-        block,
-        re.DOTALL
-    )
-
-    try:
-        stats = json.loads("[" + stats_match.group(1) + "]") if stats_match else []
-        ratings = json.loads("[" + ratings_match.group(1) + "]") if ratings_match else []
-        stats_tids = json.loads(tids_match.group(1)) if tids_match else []
-
-        players_from_txt[name] = {
-            "stats": stats,
-            "ratings": ratings,
-            "statsTids": stats_tids,
-        }
-
-    except Exception as e:
-        print(f"Failed parsing {name}: {e}")
-
-
 # Replace fields in NHL json
 updated = 0
-rating_2026 = None
 matched_names = set()
 
 for player in db["players"]:
     full_name = f"{player.get('firstName','')} {player.get('lastName','')}".strip()
 
-    if full_name in players_from_txt:
-        player["stats"] = players_from_txt[full_name]["stats"]
+    if full_name in players_data:
+        player["stats"] = players_data[full_name]["stats"]
         existing_ratings = player.get("ratings", [])
         txt_ratings = [
             rating
-            for rating in players_from_txt[full_name]["ratings"]
+            for rating in players_data[full_name]["ratings"]
             if rating["season"] != 2026
         ]
         player["ratings"] = txt_ratings + existing_ratings
@@ -595,7 +630,7 @@ for player in db["players"]:
                 rating_2027["season"] = 2027
                 player["ratings"].append(rating_2027)
                 break
-        player["statsTids"] = players_from_txt[full_name]["statsTids"]
+        player["statsTids"] = players_data[full_name]["statsTids"]
 
         updated += 1
         matched_names.add(full_name)
@@ -603,18 +638,17 @@ for player in db["players"]:
 
 print(f"\nUpdated {updated} players")
 
-
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     json.dump(db, f, ensure_ascii=False)
 
 print(f"Saved: {OUTPUT_FILE}")
 
-# Report players found in stats.txt but not present in the JSON roster file
-not_found = sorted(set(players_from_txt.keys()) - matched_names)
+# Report players found in the scraped data but not present in the JSON roster file
+not_found = sorted(set(players_data.keys()) - matched_names)
 
 if not_found:
-    print(f"\n{len(not_found)} player(s) from {TXT_FILE} were not found in {JSON_FILE}:")
+    print(f"\n{len(not_found)} player(s) from {STATS_JSON_FILE} were not found in {JSON_FILE}:")
     for name in not_found:
         print(f"  - {name}")
 else:
-    print(f"\nAll players from {TXT_FILE} were found in {JSON_FILE}.")
+    print(f"\nAll players from {STATS_JSON_FILE} were found in {JSON_FILE}.")
